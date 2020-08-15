@@ -1,0 +1,1474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		"Parma::ParmaPackageTests::ProductTarget" /* ParmaPackageTests */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = OBJ_236 /* Build configuration list for PBXAggregateTarget "ParmaPackageTests" */;
+			buildPhases = (
+			);
+			dependencies = (
+				OBJ_239 /* PBXTargetDependency */,
+			);
+			name = ParmaPackageTests;
+			productName = ParmaPackageTests;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		D709BE6724E8287A0070BEE2 /* Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709BE6624E8287A0070BEE2 /* Element.swift */; };
+		D709BE6924E828C60070BEE2 /* HeadingLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709BE6824E828C60070BEE2 /* HeadingLevel.swift */; };
+		D709BE6B24E828F00070BEE2 /* ListType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709BE6A24E828EF0070BEE2 /* ListType.swift */; };
+		D709BE6D24E829630070BEE2 /* ComposingContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709BE6C24E829630070BEE2 /* ComposingContext.swift */; };
+		D709BE7024E82B3D0070BEE2 /* Composer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709BE6F24E82B3D0070BEE2 /* Composer.swift */; };
+		D709BE7324E82C7A0070BEE2 /* ElementComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709BE7224E82C7A0070BEE2 /* ElementComposer.swift */; };
+		D709BE7624E82CF60070BEE2 /* ParmaRender.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709BE7524E82CF60070BEE2 /* ParmaRender.swift */; };
+		D709BE7824E82DB10070BEE2 /* ParmaRenderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709BE7724E82DB10070BEE2 /* ParmaRenderable.swift */; };
+		D709BE7A24E82E9B0070BEE2 /* PlainTextComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709BE7924E82E9B0070BEE2 /* PlainTextComposer.swift */; };
+		D709BE7C24E82EC60070BEE2 /* StrongElementComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709BE7B24E82EC60070BEE2 /* StrongElementComposer.swift */; };
+		D709BE7E24E82EFE0070BEE2 /* EmphasisElementComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709BE7D24E82EFE0070BEE2 /* EmphasisElementComposer.swift */; };
+		D709BE8024E82F2A0070BEE2 /* LinkElementComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709BE7F24E82F2A0070BEE2 /* LinkElementComposer.swift */; };
+		D709BE8224E82F4B0070BEE2 /* CodeElementComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709BE8124E82F4B0070BEE2 /* CodeElementComposer.swift */; };
+		D709BE8424E82F6C0070BEE2 /* HeadingElementComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709BE8324E82F6C0070BEE2 /* HeadingElementComposer.swift */; };
+		D709BE8624E82F9A0070BEE2 /* ParagraphElementComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709BE8524E82F9A0070BEE2 /* ParagraphElementComposer.swift */; };
+		D709BE8824E82FD60070BEE2 /* ImageElementComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709BE8724E82FD60070BEE2 /* ImageElementComposer.swift */; };
+		D709BE8A24E830000070BEE2 /* ListElementComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709BE8924E830000070BEE2 /* ListElementComposer.swift */; };
+		D709BE8C24E830250070BEE2 /* ListItemElementComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709BE8B24E830250070BEE2 /* ListItemElementComposer.swift */; };
+		D709BE8E24E830680070BEE2 /* UnknownElementComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709BE8D24E830680070BEE2 /* UnknownElementComposer.swift */; };
+		OBJ_145 /* BaseNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* BaseNode.swift */; };
+		OBJ_146 /* BlockQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* BlockQuote.swift */; };
+		OBJ_147 /* Code.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* Code.swift */; };
+		OBJ_148 /* CodeBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* CodeBlock.swift */; };
+		OBJ_149 /* CustomBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* CustomBlock.swift */; };
+		OBJ_150 /* CustomInline.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* CustomInline.swift */; };
+		OBJ_151 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* Document.swift */; };
+		OBJ_152 /* Emphasis.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* Emphasis.swift */; };
+		OBJ_153 /* Heading.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* Heading.swift */; };
+		OBJ_154 /* HtmlBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* HtmlBlock.swift */; };
+		OBJ_155 /* HtmlInline.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* HtmlInline.swift */; };
+		OBJ_156 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* Image.swift */; };
+		OBJ_157 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* Item.swift */; };
+		OBJ_158 /* LineBreak.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* LineBreak.swift */; };
+		OBJ_159 /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* Link.swift */; };
+		OBJ_160 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* List.swift */; };
+		OBJ_161 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* Node.swift */; };
+		OBJ_162 /* Paragraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* Paragraph.swift */; };
+		OBJ_163 /* SoftBreak.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* SoftBreak.swift */; };
+		OBJ_164 /* Strong.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* Strong.swift */; };
+		OBJ_165 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* Text.swift */; };
+		OBJ_166 /* ThematicBreak.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* ThematicBreak.swift */; };
+		OBJ_167 /* ColorCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* ColorCollection.swift */; };
+		OBJ_168 /* FontCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* FontCollection.swift */; };
+		OBJ_169 /* ParagraphStyleCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* ParagraphStyleCollection.swift */; };
+		OBJ_170 /* BlockBackgroundColorAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* BlockBackgroundColorAttribute.swift */; };
+		OBJ_171 /* QuoteStripeAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* QuoteStripeAttribute.swift */; };
+		OBJ_172 /* ThematicBreakAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* ThematicBreakAttribute.swift */; };
+		OBJ_173 /* CGPoint+Translate.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_52 /* CGPoint+Translate.swift */; };
+		OBJ_174 /* CGRect+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_53 /* CGRect+Helpers.swift */; };
+		OBJ_175 /* NSAttributedString+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_54 /* NSAttributedString+Helpers.swift */; };
+		OBJ_176 /* NSMutableAttributedString+Attributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_55 /* NSMutableAttributedString+Attributes.swift */; };
+		OBJ_177 /* UIFont+Traits.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_56 /* UIFont+Traits.swift */; };
+		OBJ_178 /* ListItemParagraphStyler.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_57 /* ListItemParagraphStyler.swift */; };
+		OBJ_179 /* DownDebugLayoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_59 /* DownDebugLayoutManager.swift */; };
+		OBJ_180 /* DownLayoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_60 /* DownLayoutManager.swift */; };
+		OBJ_181 /* CodeBlockOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_62 /* CodeBlockOptions.swift */; };
+		OBJ_182 /* ListItemOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_63 /* ListItemOptions.swift */; };
+		OBJ_183 /* QuoteStripeOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_64 /* QuoteStripeOptions.swift */; };
+		OBJ_184 /* ThematicBreakOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_65 /* ThematicBreakOptions.swift */; };
+		OBJ_185 /* DownStyler.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_67 /* DownStyler.swift */; };
+		OBJ_186 /* DownStylerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_68 /* DownStylerConfiguration.swift */; };
+		OBJ_187 /* Styler.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_69 /* Styler.swift */; };
+		OBJ_188 /* DownDebugTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_71 /* DownDebugTextView.swift */; };
+		OBJ_189 /* DownTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_72 /* DownTextView.swift */; };
+		OBJ_190 /* AttributedStringVisitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_74 /* AttributedStringVisitor.swift */; };
+		OBJ_191 /* DebugVisitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_75 /* DebugVisitor.swift */; };
+		OBJ_192 /* ListItemPrefixGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_76 /* ListItemPrefixGenerator.swift */; };
+		OBJ_193 /* Vistor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_77 /* Vistor.swift */; };
+		OBJ_194 /* Down.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_78 /* Down.swift */; };
+		OBJ_195 /* DownErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_80 /* DownErrors.swift */; };
+		OBJ_196 /* DownOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_81 /* DownOptions.swift */; };
+		OBJ_197 /* NSAttributedString+HTML.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_83 /* NSAttributedString+HTML.swift */; };
+		OBJ_198 /* String+ToHTML.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_84 /* String+ToHTML.swift */; };
+		OBJ_199 /* DownASTRenderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_86 /* DownASTRenderable.swift */; };
+		OBJ_200 /* DownAttributedStringRenderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_87 /* DownAttributedStringRenderable.swift */; };
+		OBJ_201 /* DownCommonMarkRenderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_88 /* DownCommonMarkRenderable.swift */; };
+		OBJ_202 /* DownGroffRenderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_89 /* DownGroffRenderable.swift */; };
+		OBJ_203 /* DownHTMLRenderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_90 /* DownHTMLRenderable.swift */; };
+		OBJ_204 /* DownLaTeXRenderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_91 /* DownLaTeXRenderable.swift */; };
+		OBJ_205 /* DownRenderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_92 /* DownRenderable.swift */; };
+		OBJ_206 /* DownXMLRenderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_93 /* DownXMLRenderable.swift */; };
+		OBJ_207 /* DownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_95 /* DownView.swift */; };
+		OBJ_209 /* libcmark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Down::libcmark::Product" /* libcmark.framework */; };
+		OBJ_217 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_133 /* Package.swift */; };
+		OBJ_223 /* Parma.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Parma.swift */; };
+		OBJ_225 /* Down.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Down::Down::Product" /* Down.framework */; };
+		OBJ_226 /* libcmark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Down::libcmark::Product" /* libcmark.framework */; };
+		OBJ_234 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_245 /* ParmaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* ParmaTests.swift */; };
+		OBJ_246 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* XCTestManifests.swift */; };
+		OBJ_248 /* Parma.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Parma::Parma::Product" /* Parma.framework */; };
+		OBJ_249 /* Down.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Down::Down::Product" /* Down.framework */; };
+		OBJ_250 /* libcmark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Down::libcmark::Product" /* libcmark.framework */; };
+		OBJ_258 /* blocks.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_97 /* blocks.c */; };
+		OBJ_259 /* buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_98 /* buffer.c */; };
+		OBJ_260 /* cmark.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_99 /* cmark.c */; };
+		OBJ_261 /* cmark_ctype.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_100 /* cmark_ctype.c */; };
+		OBJ_262 /* commonmark.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_101 /* commonmark.c */; };
+		OBJ_263 /* houdini_href_e.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_102 /* houdini_href_e.c */; };
+		OBJ_264 /* houdini_html_e.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_103 /* houdini_html_e.c */; };
+		OBJ_265 /* houdini_html_u.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_104 /* houdini_html_u.c */; };
+		OBJ_266 /* html.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_105 /* html.c */; };
+		OBJ_267 /* inlines.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_106 /* inlines.c */; };
+		OBJ_268 /* iterator.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_107 /* iterator.c */; };
+		OBJ_269 /* latex.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_108 /* latex.c */; };
+		OBJ_270 /* man.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_109 /* man.c */; };
+		OBJ_271 /* node.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_110 /* node.c */; };
+		OBJ_272 /* references.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_111 /* references.c */; };
+		OBJ_273 /* render.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_112 /* render.c */; };
+		OBJ_274 /* scanners.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_113 /* scanners.c */; };
+		OBJ_275 /* utf8.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_114 /* utf8.c */; };
+		OBJ_276 /* xml.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_115 /* xml.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D709BE5824E822C20070BEE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Down::Down";
+			remoteInfo = Down;
+		};
+		D709BE5924E822C20070BEE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Down::libcmark";
+			remoteInfo = libcmark;
+		};
+		D709BE5A24E822C20070BEE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Down::libcmark";
+			remoteInfo = libcmark;
+		};
+		D709BE5B24E822C30070BEE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Parma::Parma";
+			remoteInfo = Parma;
+		};
+		D709BE5C24E822C30070BEE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Down::Down";
+			remoteInfo = Down;
+		};
+		D709BE5D24E822C30070BEE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Down::libcmark";
+			remoteInfo = libcmark;
+		};
+		D709BE5E24E822C40070BEE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Parma::ParmaTests";
+			remoteInfo = ParmaTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D709BE6624E8287A0070BEE2 /* Element.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Element.swift; sourceTree = "<group>"; };
+		D709BE6824E828C60070BEE2 /* HeadingLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingLevel.swift; sourceTree = "<group>"; };
+		D709BE6A24E828EF0070BEE2 /* ListType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListType.swift; sourceTree = "<group>"; };
+		D709BE6C24E829630070BEE2 /* ComposingContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposingContext.swift; sourceTree = "<group>"; };
+		D709BE6F24E82B3D0070BEE2 /* Composer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Composer.swift; sourceTree = "<group>"; };
+		D709BE7224E82C7A0070BEE2 /* ElementComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementComposer.swift; sourceTree = "<group>"; };
+		D709BE7524E82CF60070BEE2 /* ParmaRender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParmaRender.swift; sourceTree = "<group>"; };
+		D709BE7724E82DB10070BEE2 /* ParmaRenderable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParmaRenderable.swift; sourceTree = "<group>"; };
+		D709BE7924E82E9B0070BEE2 /* PlainTextComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlainTextComposer.swift; sourceTree = "<group>"; };
+		D709BE7B24E82EC60070BEE2 /* StrongElementComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrongElementComposer.swift; sourceTree = "<group>"; };
+		D709BE7D24E82EFE0070BEE2 /* EmphasisElementComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmphasisElementComposer.swift; sourceTree = "<group>"; };
+		D709BE7F24E82F2A0070BEE2 /* LinkElementComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkElementComposer.swift; sourceTree = "<group>"; };
+		D709BE8124E82F4B0070BEE2 /* CodeElementComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeElementComposer.swift; sourceTree = "<group>"; };
+		D709BE8324E82F6C0070BEE2 /* HeadingElementComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingElementComposer.swift; sourceTree = "<group>"; };
+		D709BE8524E82F9A0070BEE2 /* ParagraphElementComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParagraphElementComposer.swift; sourceTree = "<group>"; };
+		D709BE8724E82FD60070BEE2 /* ImageElementComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageElementComposer.swift; sourceTree = "<group>"; };
+		D709BE8924E830000070BEE2 /* ListElementComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListElementComposer.swift; sourceTree = "<group>"; };
+		D709BE8B24E830250070BEE2 /* ListItemElementComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemElementComposer.swift; sourceTree = "<group>"; };
+		D709BE8D24E830680070BEE2 /* UnknownElementComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnknownElementComposer.swift; sourceTree = "<group>"; };
+		"Down::Down::Product" /* Down.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Down.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"Down::libcmark::Product" /* libcmark.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libcmark.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_100 /* cmark_ctype.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = cmark_ctype.c; sourceTree = "<group>"; };
+		OBJ_101 /* commonmark.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = commonmark.c; sourceTree = "<group>"; };
+		OBJ_102 /* houdini_href_e.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = houdini_href_e.c; sourceTree = "<group>"; };
+		OBJ_103 /* houdini_html_e.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = houdini_html_e.c; sourceTree = "<group>"; };
+		OBJ_104 /* houdini_html_u.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = houdini_html_u.c; sourceTree = "<group>"; };
+		OBJ_105 /* html.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = html.c; sourceTree = "<group>"; };
+		OBJ_106 /* inlines.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = inlines.c; sourceTree = "<group>"; };
+		OBJ_107 /* iterator.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = iterator.c; sourceTree = "<group>"; };
+		OBJ_108 /* latex.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = latex.c; sourceTree = "<group>"; };
+		OBJ_109 /* man.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = man.c; sourceTree = "<group>"; };
+		OBJ_110 /* node.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = node.c; sourceTree = "<group>"; };
+		OBJ_111 /* references.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = references.c; sourceTree = "<group>"; };
+		OBJ_112 /* render.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = render.c; sourceTree = "<group>"; };
+		OBJ_113 /* scanners.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = scanners.c; sourceTree = "<group>"; };
+		OBJ_114 /* utf8.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = utf8.c; sourceTree = "<group>"; };
+		OBJ_115 /* xml.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = xml.c; sourceTree = "<group>"; };
+		OBJ_116 /* cmark_export.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cmark_export.h; sourceTree = "<group>"; };
+		OBJ_117 /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		OBJ_118 /* chunk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = chunk.h; sourceTree = "<group>"; };
+		OBJ_119 /* parser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = parser.h; sourceTree = "<group>"; };
+		OBJ_12 /* ParmaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParmaTests.swift; sourceTree = "<group>"; };
+		OBJ_120 /* scanners.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = scanners.h; sourceTree = "<group>"; };
+		OBJ_121 /* node.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = node.h; sourceTree = "<group>"; };
+		OBJ_122 /* cmark_version.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cmark_version.h; sourceTree = "<group>"; };
+		OBJ_123 /* cmark_ctype.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cmark_ctype.h; sourceTree = "<group>"; };
+		OBJ_124 /* buffer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = buffer.h; sourceTree = "<group>"; };
+		OBJ_125 /* cmark.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cmark.h; sourceTree = "<group>"; };
+		OBJ_126 /* inlines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = inlines.h; sourceTree = "<group>"; };
+		OBJ_127 /* houdini.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = houdini.h; sourceTree = "<group>"; };
+		OBJ_128 /* iterator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iterator.h; sourceTree = "<group>"; };
+		OBJ_129 /* utf8.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = utf8.h; sourceTree = "<group>"; };
+		OBJ_13 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
+		OBJ_130 /* references.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = references.h; sourceTree = "<group>"; };
+		OBJ_131 /* render.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = render.h; sourceTree = "<group>"; };
+		OBJ_132 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = /Users/leonard/Documents/Development/Parma/Parma.xcodeproj/GeneratedModuleMap/libcmark/module.modulemap; sourceTree = "<group>"; };
+		OBJ_133 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = /Users/leonard/Documents/Development/Parma/.build/checkouts/Down/Package.swift; sourceTree = "<group>"; };
+		OBJ_139 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		OBJ_19 /* BaseNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNode.swift; sourceTree = "<group>"; };
+		OBJ_20 /* BlockQuote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockQuote.swift; sourceTree = "<group>"; };
+		OBJ_21 /* Code.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Code.swift; sourceTree = "<group>"; };
+		OBJ_22 /* CodeBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeBlock.swift; sourceTree = "<group>"; };
+		OBJ_23 /* CustomBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBlock.swift; sourceTree = "<group>"; };
+		OBJ_24 /* CustomInline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInline.swift; sourceTree = "<group>"; };
+		OBJ_25 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		OBJ_26 /* Emphasis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emphasis.swift; sourceTree = "<group>"; };
+		OBJ_27 /* Heading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heading.swift; sourceTree = "<group>"; };
+		OBJ_28 /* HtmlBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HtmlBlock.swift; sourceTree = "<group>"; };
+		OBJ_29 /* HtmlInline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HtmlInline.swift; sourceTree = "<group>"; };
+		OBJ_30 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		OBJ_31 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		OBJ_32 /* LineBreak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineBreak.swift; sourceTree = "<group>"; };
+		OBJ_33 /* Link.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Link.swift; sourceTree = "<group>"; };
+		OBJ_34 /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
+		OBJ_35 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		OBJ_36 /* Paragraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paragraph.swift; sourceTree = "<group>"; };
+		OBJ_37 /* SoftBreak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftBreak.swift; sourceTree = "<group>"; };
+		OBJ_38 /* Strong.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strong.swift; sourceTree = "<group>"; };
+		OBJ_39 /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
+		OBJ_40 /* ThematicBreak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThematicBreak.swift; sourceTree = "<group>"; };
+		OBJ_43 /* ColorCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCollection.swift; sourceTree = "<group>"; };
+		OBJ_44 /* FontCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontCollection.swift; sourceTree = "<group>"; };
+		OBJ_45 /* ParagraphStyleCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParagraphStyleCollection.swift; sourceTree = "<group>"; };
+		OBJ_47 /* BlockBackgroundColorAttribute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockBackgroundColorAttribute.swift; sourceTree = "<group>"; };
+		OBJ_48 /* QuoteStripeAttribute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteStripeAttribute.swift; sourceTree = "<group>"; };
+		OBJ_49 /* ThematicBreakAttribute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThematicBreakAttribute.swift; sourceTree = "<group>"; };
+		OBJ_52 /* CGPoint+Translate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Translate.swift"; sourceTree = "<group>"; };
+		OBJ_53 /* CGRect+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Helpers.swift"; sourceTree = "<group>"; };
+		OBJ_54 /* NSAttributedString+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Helpers.swift"; sourceTree = "<group>"; };
+		OBJ_55 /* NSMutableAttributedString+Attributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+Attributes.swift"; sourceTree = "<group>"; };
+		OBJ_56 /* UIFont+Traits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Traits.swift"; sourceTree = "<group>"; };
+		OBJ_57 /* ListItemParagraphStyler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemParagraphStyler.swift; sourceTree = "<group>"; };
+		OBJ_59 /* DownDebugLayoutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownDebugLayoutManager.swift; sourceTree = "<group>"; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		OBJ_60 /* DownLayoutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownLayoutManager.swift; sourceTree = "<group>"; };
+		OBJ_62 /* CodeBlockOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeBlockOptions.swift; sourceTree = "<group>"; };
+		OBJ_63 /* ListItemOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemOptions.swift; sourceTree = "<group>"; };
+		OBJ_64 /* QuoteStripeOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteStripeOptions.swift; sourceTree = "<group>"; };
+		OBJ_65 /* ThematicBreakOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThematicBreakOptions.swift; sourceTree = "<group>"; };
+		OBJ_67 /* DownStyler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownStyler.swift; sourceTree = "<group>"; };
+		OBJ_68 /* DownStylerConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownStylerConfiguration.swift; sourceTree = "<group>"; };
+		OBJ_69 /* Styler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styler.swift; sourceTree = "<group>"; };
+		OBJ_71 /* DownDebugTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownDebugTextView.swift; sourceTree = "<group>"; };
+		OBJ_72 /* DownTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownTextView.swift; sourceTree = "<group>"; };
+		OBJ_74 /* AttributedStringVisitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedStringVisitor.swift; sourceTree = "<group>"; };
+		OBJ_75 /* DebugVisitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugVisitor.swift; sourceTree = "<group>"; };
+		OBJ_76 /* ListItemPrefixGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemPrefixGenerator.swift; sourceTree = "<group>"; };
+		OBJ_77 /* Vistor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vistor.swift; sourceTree = "<group>"; };
+		OBJ_78 /* Down.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Down.swift; sourceTree = "<group>"; };
+		OBJ_80 /* DownErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownErrors.swift; sourceTree = "<group>"; };
+		OBJ_81 /* DownOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownOptions.swift; sourceTree = "<group>"; };
+		OBJ_83 /* NSAttributedString+HTML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+HTML.swift"; sourceTree = "<group>"; };
+		OBJ_84 /* String+ToHTML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ToHTML.swift"; sourceTree = "<group>"; };
+		OBJ_86 /* DownASTRenderable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownASTRenderable.swift; sourceTree = "<group>"; };
+		OBJ_87 /* DownAttributedStringRenderable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownAttributedStringRenderable.swift; sourceTree = "<group>"; };
+		OBJ_88 /* DownCommonMarkRenderable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownCommonMarkRenderable.swift; sourceTree = "<group>"; };
+		OBJ_89 /* DownGroffRenderable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownGroffRenderable.swift; sourceTree = "<group>"; };
+		OBJ_9 /* Parma.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parma.swift; sourceTree = "<group>"; };
+		OBJ_90 /* DownHTMLRenderable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownHTMLRenderable.swift; sourceTree = "<group>"; };
+		OBJ_91 /* DownLaTeXRenderable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownLaTeXRenderable.swift; sourceTree = "<group>"; };
+		OBJ_92 /* DownRenderable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownRenderable.swift; sourceTree = "<group>"; };
+		OBJ_93 /* DownXMLRenderable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownXMLRenderable.swift; sourceTree = "<group>"; };
+		OBJ_95 /* DownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownView.swift; sourceTree = "<group>"; };
+		OBJ_97 /* blocks.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = blocks.c; sourceTree = "<group>"; };
+		OBJ_98 /* buffer.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = buffer.c; sourceTree = "<group>"; };
+		OBJ_99 /* cmark.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = cmark.c; sourceTree = "<group>"; };
+		"Parma::Parma::Product" /* Parma.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Parma.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"Parma::ParmaTests::Product" /* ParmaTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = ParmaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		OBJ_208 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_209 /* libcmark.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_224 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_225 /* Down.framework in Frameworks */,
+				OBJ_226 /* libcmark.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_247 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_248 /* Parma.framework in Frameworks */,
+				OBJ_249 /* Down.framework in Frameworks */,
+				OBJ_250 /* libcmark.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_277 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D709BE6E24E82B010070BEE2 /* Element */ = {
+			isa = PBXGroup;
+			children = (
+				D709BE6624E8287A0070BEE2 /* Element.swift */,
+				D709BE6824E828C60070BEE2 /* HeadingLevel.swift */,
+				D709BE6A24E828EF0070BEE2 /* ListType.swift */,
+			);
+			path = Element;
+			sourceTree = "<group>";
+		};
+		D709BE7124E82C410070BEE2 /* Composer */ = {
+			isa = PBXGroup;
+			children = (
+				D709BE6F24E82B3D0070BEE2 /* Composer.swift */,
+				D709BE6C24E829630070BEE2 /* ComposingContext.swift */,
+				D709BE7224E82C7A0070BEE2 /* ElementComposer.swift */,
+				D709BE7924E82E9B0070BEE2 /* PlainTextComposer.swift */,
+				D709BE7B24E82EC60070BEE2 /* StrongElementComposer.swift */,
+				D709BE7D24E82EFE0070BEE2 /* EmphasisElementComposer.swift */,
+				D709BE7F24E82F2A0070BEE2 /* LinkElementComposer.swift */,
+				D709BE8124E82F4B0070BEE2 /* CodeElementComposer.swift */,
+				D709BE8324E82F6C0070BEE2 /* HeadingElementComposer.swift */,
+				D709BE8524E82F9A0070BEE2 /* ParagraphElementComposer.swift */,
+				D709BE8724E82FD60070BEE2 /* ImageElementComposer.swift */,
+				D709BE8924E830000070BEE2 /* ListElementComposer.swift */,
+				D709BE8B24E830250070BEE2 /* ListItemElementComposer.swift */,
+				D709BE8D24E830680070BEE2 /* UnknownElementComposer.swift */,
+			);
+			path = Composer;
+			sourceTree = "<group>";
+		};
+		D709BE7424E82CC60070BEE2 /* Render */ = {
+			isa = PBXGroup;
+			children = (
+				D709BE7724E82DB10070BEE2 /* ParmaRenderable.swift */,
+				D709BE7524E82CF60070BEE2 /* ParmaRender.swift */,
+			);
+			path = Render;
+			sourceTree = "<group>";
+		};
+		OBJ_10 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_11 /* ParmaTests */,
+			);
+			name = Tests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_11 /* ParmaTests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_12 /* ParmaTests.swift */,
+				OBJ_13 /* XCTestManifests.swift */,
+			);
+			name = ParmaTests;
+			path = Tests/ParmaTests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_134 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				"Parma::ParmaTests::Product" /* ParmaTests.xctest */,
+				"Parma::Parma::Product" /* Parma.framework */,
+				"Down::libcmark::Product" /* libcmark.framework */,
+				"Down::Down::Product" /* Down.framework */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		OBJ_14 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_15 /* Down 0.9.3 */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		OBJ_15 /* Down 0.9.3 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_16 /* Down */,
+				OBJ_96 /* libcmark */,
+				OBJ_133 /* Package.swift */,
+			);
+			name = "Down 0.9.3";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_16 /* Down */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_17 /* AST */,
+				OBJ_78 /* Down.swift */,
+				OBJ_79 /* Enums & Options */,
+				OBJ_82 /* Extensions */,
+				OBJ_85 /* Renderers */,
+				OBJ_94 /* Views */,
+			);
+			name = Down;
+			path = .build/checkouts/Down/Source;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_17 /* AST */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_18 /* Nodes */,
+				OBJ_41 /* Styling */,
+				OBJ_73 /* Visitors */,
+			);
+			path = AST;
+			sourceTree = "<group>";
+		};
+		OBJ_18 /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_19 /* BaseNode.swift */,
+				OBJ_20 /* BlockQuote.swift */,
+				OBJ_21 /* Code.swift */,
+				OBJ_22 /* CodeBlock.swift */,
+				OBJ_23 /* CustomBlock.swift */,
+				OBJ_24 /* CustomInline.swift */,
+				OBJ_25 /* Document.swift */,
+				OBJ_26 /* Emphasis.swift */,
+				OBJ_27 /* Heading.swift */,
+				OBJ_28 /* HtmlBlock.swift */,
+				OBJ_29 /* HtmlInline.swift */,
+				OBJ_30 /* Image.swift */,
+				OBJ_31 /* Item.swift */,
+				OBJ_32 /* LineBreak.swift */,
+				OBJ_33 /* Link.swift */,
+				OBJ_34 /* List.swift */,
+				OBJ_35 /* Node.swift */,
+				OBJ_36 /* Paragraph.swift */,
+				OBJ_37 /* SoftBreak.swift */,
+				OBJ_38 /* Strong.swift */,
+				OBJ_39 /* Text.swift */,
+				OBJ_40 /* ThematicBreak.swift */,
+			);
+			path = Nodes;
+			sourceTree = "<group>";
+		};
+		OBJ_41 /* Styling */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_42 /* Attribute Collections */,
+				OBJ_46 /* Custom Attributes */,
+				OBJ_50 /* Helpers */,
+				OBJ_58 /* Layout Managers */,
+				OBJ_61 /* Options */,
+				OBJ_66 /* Stylers */,
+				OBJ_70 /* Text Views */,
+			);
+			path = Styling;
+			sourceTree = "<group>";
+		};
+		OBJ_42 /* Attribute Collections */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_43 /* ColorCollection.swift */,
+				OBJ_44 /* FontCollection.swift */,
+				OBJ_45 /* ParagraphStyleCollection.swift */,
+			);
+			path = "Attribute Collections";
+			sourceTree = "<group>";
+		};
+		OBJ_46 /* Custom Attributes */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_47 /* BlockBackgroundColorAttribute.swift */,
+				OBJ_48 /* QuoteStripeAttribute.swift */,
+				OBJ_49 /* ThematicBreakAttribute.swift */,
+			);
+			path = "Custom Attributes";
+			sourceTree = "<group>";
+		};
+		OBJ_5 /*  */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_10 /* Tests */,
+				OBJ_14 /* Dependencies */,
+				OBJ_134 /* Products */,
+				OBJ_139 /* README.md */,
+			);
+			name = "";
+			sourceTree = "<group>";
+		};
+		OBJ_50 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_51 /* Extensions */,
+				OBJ_57 /* ListItemParagraphStyler.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		OBJ_51 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_52 /* CGPoint+Translate.swift */,
+				OBJ_53 /* CGRect+Helpers.swift */,
+				OBJ_54 /* NSAttributedString+Helpers.swift */,
+				OBJ_55 /* NSMutableAttributedString+Attributes.swift */,
+				OBJ_56 /* UIFont+Traits.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		OBJ_58 /* Layout Managers */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_59 /* DownDebugLayoutManager.swift */,
+				OBJ_60 /* DownLayoutManager.swift */,
+			);
+			path = "Layout Managers";
+			sourceTree = "<group>";
+		};
+		OBJ_61 /* Options */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_62 /* CodeBlockOptions.swift */,
+				OBJ_63 /* ListItemOptions.swift */,
+				OBJ_64 /* QuoteStripeOptions.swift */,
+				OBJ_65 /* ThematicBreakOptions.swift */,
+			);
+			path = Options;
+			sourceTree = "<group>";
+		};
+		OBJ_66 /* Stylers */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_67 /* DownStyler.swift */,
+				OBJ_68 /* DownStylerConfiguration.swift */,
+				OBJ_69 /* Styler.swift */,
+			);
+			path = Stylers;
+			sourceTree = "<group>";
+		};
+		OBJ_7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_8 /* Parma */,
+			);
+			name = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_70 /* Text Views */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_71 /* DownDebugTextView.swift */,
+				OBJ_72 /* DownTextView.swift */,
+			);
+			path = "Text Views";
+			sourceTree = "<group>";
+		};
+		OBJ_73 /* Visitors */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_74 /* AttributedStringVisitor.swift */,
+				OBJ_75 /* DebugVisitor.swift */,
+				OBJ_76 /* ListItemPrefixGenerator.swift */,
+				OBJ_77 /* Vistor.swift */,
+			);
+			path = Visitors;
+			sourceTree = "<group>";
+		};
+		OBJ_79 /* Enums & Options */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_80 /* DownErrors.swift */,
+				OBJ_81 /* DownOptions.swift */,
+			);
+			path = "Enums & Options";
+			sourceTree = "<group>";
+		};
+		OBJ_8 /* Parma */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_9 /* Parma.swift */,
+				D709BE6E24E82B010070BEE2 /* Element */,
+				D709BE7124E82C410070BEE2 /* Composer */,
+				D709BE7424E82CC60070BEE2 /* Render */,
+			);
+			name = Parma;
+			path = Sources/Parma;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_82 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_83 /* NSAttributedString+HTML.swift */,
+				OBJ_84 /* String+ToHTML.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		OBJ_85 /* Renderers */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_86 /* DownASTRenderable.swift */,
+				OBJ_87 /* DownAttributedStringRenderable.swift */,
+				OBJ_88 /* DownCommonMarkRenderable.swift */,
+				OBJ_89 /* DownGroffRenderable.swift */,
+				OBJ_90 /* DownHTMLRenderable.swift */,
+				OBJ_91 /* DownLaTeXRenderable.swift */,
+				OBJ_92 /* DownRenderable.swift */,
+				OBJ_93 /* DownXMLRenderable.swift */,
+			);
+			path = Renderers;
+			sourceTree = "<group>";
+		};
+		OBJ_94 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_95 /* DownView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		OBJ_96 /* libcmark */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_97 /* blocks.c */,
+				OBJ_98 /* buffer.c */,
+				OBJ_99 /* cmark.c */,
+				OBJ_100 /* cmark_ctype.c */,
+				OBJ_101 /* commonmark.c */,
+				OBJ_102 /* houdini_href_e.c */,
+				OBJ_103 /* houdini_html_e.c */,
+				OBJ_104 /* houdini_html_u.c */,
+				OBJ_105 /* html.c */,
+				OBJ_106 /* inlines.c */,
+				OBJ_107 /* iterator.c */,
+				OBJ_108 /* latex.c */,
+				OBJ_109 /* man.c */,
+				OBJ_110 /* node.c */,
+				OBJ_111 /* references.c */,
+				OBJ_112 /* render.c */,
+				OBJ_113 /* scanners.c */,
+				OBJ_114 /* utf8.c */,
+				OBJ_115 /* xml.c */,
+				OBJ_116 /* cmark_export.h */,
+				OBJ_117 /* config.h */,
+				OBJ_118 /* chunk.h */,
+				OBJ_119 /* parser.h */,
+				OBJ_120 /* scanners.h */,
+				OBJ_121 /* node.h */,
+				OBJ_122 /* cmark_version.h */,
+				OBJ_123 /* cmark_ctype.h */,
+				OBJ_124 /* buffer.h */,
+				OBJ_125 /* cmark.h */,
+				OBJ_126 /* inlines.h */,
+				OBJ_127 /* houdini.h */,
+				OBJ_128 /* iterator.h */,
+				OBJ_129 /* utf8.h */,
+				OBJ_130 /* references.h */,
+				OBJ_131 /* render.h */,
+				OBJ_132 /* module.modulemap */,
+			);
+			name = libcmark;
+			path = .build/checkouts/Down/Source/cmark;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		"Down::Down" /* Down */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_141 /* Build configuration list for PBXNativeTarget "Down" */;
+			buildPhases = (
+				OBJ_144 /* Sources */,
+				OBJ_208 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_210 /* PBXTargetDependency */,
+			);
+			name = Down;
+			productName = Down;
+			productReference = "Down::Down::Product" /* Down.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"Down::SwiftPMPackageDescription" /* DownPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_213 /* Build configuration list for PBXNativeTarget "DownPackageDescription" */;
+			buildPhases = (
+				OBJ_216 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DownPackageDescription;
+			productName = DownPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"Down::libcmark" /* libcmark */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_254 /* Build configuration list for PBXNativeTarget "libcmark" */;
+			buildPhases = (
+				OBJ_257 /* Sources */,
+				OBJ_277 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libcmark;
+			productName = libcmark;
+			productReference = "Down::libcmark::Product" /* libcmark.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"Parma::Parma" /* Parma */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_219 /* Build configuration list for PBXNativeTarget "Parma" */;
+			buildPhases = (
+				OBJ_222 /* Sources */,
+				OBJ_224 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_227 /* PBXTargetDependency */,
+				OBJ_228 /* PBXTargetDependency */,
+			);
+			name = Parma;
+			productName = Parma;
+			productReference = "Parma::Parma::Product" /* Parma.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"Parma::ParmaTests" /* ParmaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_241 /* Build configuration list for PBXNativeTarget "ParmaTests" */;
+			buildPhases = (
+				OBJ_244 /* Sources */,
+				OBJ_247 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_251 /* PBXTargetDependency */,
+				OBJ_252 /* PBXTargetDependency */,
+				OBJ_253 /* PBXTargetDependency */,
+			);
+			name = ParmaTests;
+			productName = ParmaTests;
+			productReference = "Parma::ParmaTests::Product" /* ParmaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		"Parma::SwiftPMPackageDescription" /* ParmaPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_230 /* Build configuration list for PBXNativeTarget "ParmaPackageDescription" */;
+			buildPhases = (
+				OBJ_233 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ParmaPackageDescription;
+			productName = ParmaPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		OBJ_1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 9999;
+				LastUpgradeCheck = 9999;
+			};
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "Parma" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = OBJ_5 /*  */;
+			productRefGroup = OBJ_134 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				"Down::Down" /* Down */,
+				"Down::SwiftPMPackageDescription" /* DownPackageDescription */,
+				"Parma::Parma" /* Parma */,
+				"Parma::SwiftPMPackageDescription" /* ParmaPackageDescription */,
+				"Parma::ParmaPackageTests::ProductTarget" /* ParmaPackageTests */,
+				"Parma::ParmaTests" /* ParmaTests */,
+				"Down::libcmark" /* libcmark */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		OBJ_144 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_145 /* BaseNode.swift in Sources */,
+				OBJ_146 /* BlockQuote.swift in Sources */,
+				OBJ_147 /* Code.swift in Sources */,
+				OBJ_148 /* CodeBlock.swift in Sources */,
+				OBJ_149 /* CustomBlock.swift in Sources */,
+				OBJ_150 /* CustomInline.swift in Sources */,
+				OBJ_151 /* Document.swift in Sources */,
+				OBJ_152 /* Emphasis.swift in Sources */,
+				OBJ_153 /* Heading.swift in Sources */,
+				OBJ_154 /* HtmlBlock.swift in Sources */,
+				OBJ_155 /* HtmlInline.swift in Sources */,
+				OBJ_156 /* Image.swift in Sources */,
+				OBJ_157 /* Item.swift in Sources */,
+				OBJ_158 /* LineBreak.swift in Sources */,
+				OBJ_159 /* Link.swift in Sources */,
+				OBJ_160 /* List.swift in Sources */,
+				OBJ_161 /* Node.swift in Sources */,
+				OBJ_162 /* Paragraph.swift in Sources */,
+				OBJ_163 /* SoftBreak.swift in Sources */,
+				OBJ_164 /* Strong.swift in Sources */,
+				OBJ_165 /* Text.swift in Sources */,
+				OBJ_166 /* ThematicBreak.swift in Sources */,
+				OBJ_167 /* ColorCollection.swift in Sources */,
+				OBJ_168 /* FontCollection.swift in Sources */,
+				OBJ_169 /* ParagraphStyleCollection.swift in Sources */,
+				OBJ_170 /* BlockBackgroundColorAttribute.swift in Sources */,
+				OBJ_171 /* QuoteStripeAttribute.swift in Sources */,
+				OBJ_172 /* ThematicBreakAttribute.swift in Sources */,
+				OBJ_173 /* CGPoint+Translate.swift in Sources */,
+				OBJ_174 /* CGRect+Helpers.swift in Sources */,
+				OBJ_175 /* NSAttributedString+Helpers.swift in Sources */,
+				OBJ_176 /* NSMutableAttributedString+Attributes.swift in Sources */,
+				OBJ_177 /* UIFont+Traits.swift in Sources */,
+				OBJ_178 /* ListItemParagraphStyler.swift in Sources */,
+				OBJ_179 /* DownDebugLayoutManager.swift in Sources */,
+				OBJ_180 /* DownLayoutManager.swift in Sources */,
+				OBJ_181 /* CodeBlockOptions.swift in Sources */,
+				OBJ_182 /* ListItemOptions.swift in Sources */,
+				OBJ_183 /* QuoteStripeOptions.swift in Sources */,
+				OBJ_184 /* ThematicBreakOptions.swift in Sources */,
+				OBJ_185 /* DownStyler.swift in Sources */,
+				OBJ_186 /* DownStylerConfiguration.swift in Sources */,
+				OBJ_187 /* Styler.swift in Sources */,
+				OBJ_188 /* DownDebugTextView.swift in Sources */,
+				OBJ_189 /* DownTextView.swift in Sources */,
+				OBJ_190 /* AttributedStringVisitor.swift in Sources */,
+				OBJ_191 /* DebugVisitor.swift in Sources */,
+				OBJ_192 /* ListItemPrefixGenerator.swift in Sources */,
+				OBJ_193 /* Vistor.swift in Sources */,
+				OBJ_194 /* Down.swift in Sources */,
+				OBJ_195 /* DownErrors.swift in Sources */,
+				OBJ_196 /* DownOptions.swift in Sources */,
+				OBJ_197 /* NSAttributedString+HTML.swift in Sources */,
+				OBJ_198 /* String+ToHTML.swift in Sources */,
+				OBJ_199 /* DownASTRenderable.swift in Sources */,
+				OBJ_200 /* DownAttributedStringRenderable.swift in Sources */,
+				OBJ_201 /* DownCommonMarkRenderable.swift in Sources */,
+				OBJ_202 /* DownGroffRenderable.swift in Sources */,
+				OBJ_203 /* DownHTMLRenderable.swift in Sources */,
+				OBJ_204 /* DownLaTeXRenderable.swift in Sources */,
+				OBJ_205 /* DownRenderable.swift in Sources */,
+				OBJ_206 /* DownXMLRenderable.swift in Sources */,
+				OBJ_207 /* DownView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_216 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_217 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_222 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				D709BE8824E82FD60070BEE2 /* ImageElementComposer.swift in Sources */,
+				D709BE7E24E82EFE0070BEE2 /* EmphasisElementComposer.swift in Sources */,
+				D709BE8624E82F9A0070BEE2 /* ParagraphElementComposer.swift in Sources */,
+				D709BE6724E8287A0070BEE2 /* Element.swift in Sources */,
+				D709BE8024E82F2A0070BEE2 /* LinkElementComposer.swift in Sources */,
+				D709BE7A24E82E9B0070BEE2 /* PlainTextComposer.swift in Sources */,
+				D709BE7324E82C7A0070BEE2 /* ElementComposer.swift in Sources */,
+				OBJ_223 /* Parma.swift in Sources */,
+				D709BE6924E828C60070BEE2 /* HeadingLevel.swift in Sources */,
+				D709BE6B24E828F00070BEE2 /* ListType.swift in Sources */,
+				D709BE7C24E82EC60070BEE2 /* StrongElementComposer.swift in Sources */,
+				D709BE7624E82CF60070BEE2 /* ParmaRender.swift in Sources */,
+				D709BE8A24E830000070BEE2 /* ListElementComposer.swift in Sources */,
+				D709BE8E24E830680070BEE2 /* UnknownElementComposer.swift in Sources */,
+				D709BE8424E82F6C0070BEE2 /* HeadingElementComposer.swift in Sources */,
+				D709BE6D24E829630070BEE2 /* ComposingContext.swift in Sources */,
+				D709BE8224E82F4B0070BEE2 /* CodeElementComposer.swift in Sources */,
+				D709BE7024E82B3D0070BEE2 /* Composer.swift in Sources */,
+				D709BE7824E82DB10070BEE2 /* ParmaRenderable.swift in Sources */,
+				D709BE8C24E830250070BEE2 /* ListItemElementComposer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_233 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_234 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_244 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_245 /* ParmaTests.swift in Sources */,
+				OBJ_246 /* XCTestManifests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_257 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_258 /* blocks.c in Sources */,
+				OBJ_259 /* buffer.c in Sources */,
+				OBJ_260 /* cmark.c in Sources */,
+				OBJ_261 /* cmark_ctype.c in Sources */,
+				OBJ_262 /* commonmark.c in Sources */,
+				OBJ_263 /* houdini_href_e.c in Sources */,
+				OBJ_264 /* houdini_html_e.c in Sources */,
+				OBJ_265 /* houdini_html_u.c in Sources */,
+				OBJ_266 /* html.c in Sources */,
+				OBJ_267 /* inlines.c in Sources */,
+				OBJ_268 /* iterator.c in Sources */,
+				OBJ_269 /* latex.c in Sources */,
+				OBJ_270 /* man.c in Sources */,
+				OBJ_271 /* node.c in Sources */,
+				OBJ_272 /* references.c in Sources */,
+				OBJ_273 /* render.c in Sources */,
+				OBJ_274 /* scanners.c in Sources */,
+				OBJ_275 /* utf8.c in Sources */,
+				OBJ_276 /* xml.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		OBJ_210 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Down::libcmark" /* libcmark */;
+			targetProxy = D709BE5924E822C20070BEE2 /* PBXContainerItemProxy */;
+		};
+		OBJ_227 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Down::Down" /* Down */;
+			targetProxy = D709BE5824E822C20070BEE2 /* PBXContainerItemProxy */;
+		};
+		OBJ_228 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Down::libcmark" /* libcmark */;
+			targetProxy = D709BE5A24E822C20070BEE2 /* PBXContainerItemProxy */;
+		};
+		OBJ_239 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Parma::ParmaTests" /* ParmaTests */;
+			targetProxy = D709BE5E24E822C40070BEE2 /* PBXContainerItemProxy */;
+		};
+		OBJ_251 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Parma::Parma" /* Parma */;
+			targetProxy = D709BE5B24E822C30070BEE2 /* PBXContainerItemProxy */;
+		};
+		OBJ_252 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Down::Down" /* Down */;
+			targetProxy = D709BE5C24E822C30070BEE2 /* PBXContainerItemProxy */;
+		};
+		OBJ_253 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Down::libcmark" /* libcmark */;
+			targetProxy = D709BE5D24E822C30070BEE2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		OBJ_142 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/Down/Source/cmark",
+					"$(SRCROOT)/Parma.xcodeproj/GeneratedModuleMap/libcmark",
+				);
+				INFOPLIST_FILE = Parma.xcodeproj/Down_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/Parma.xcodeproj/GeneratedModuleMap/libcmark/module.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = Down;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = Down;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_143 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/Down/Source/cmark",
+					"$(SRCROOT)/Parma.xcodeproj/GeneratedModuleMap/libcmark",
+				);
+				INFOPLIST_FILE = Parma.xcodeproj/Down_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/Parma.xcodeproj/GeneratedModuleMap/libcmark/module.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = Down;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = Down;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_214 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -package-description-version 5.1.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		OBJ_215 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -package-description-version 5.1.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		OBJ_220 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 0.1;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/Down/Source/cmark",
+					"$(SRCROOT)/Parma.xcodeproj/GeneratedModuleMap/libcmark",
+				);
+				INFOPLIST_FILE = Parma.xcodeproj/Parma_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.16;
+				MARKETING_VERSION = 0.1;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/Parma.xcodeproj/GeneratedModuleMap/libcmark/module.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = Parma;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = Parma;
+				TVOS_DEPLOYMENT_TARGET = 14.0;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		OBJ_221 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 0.1;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/Down/Source/cmark",
+					"$(SRCROOT)/Parma.xcodeproj/GeneratedModuleMap/libcmark",
+				);
+				INFOPLIST_FILE = Parma.xcodeproj/Parma_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.16;
+				MARKETING_VERSION = 0.1;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/Parma.xcodeproj/GeneratedModuleMap/libcmark/module.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = Parma;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = Parma;
+				TVOS_DEPLOYMENT_TARGET = 14.0;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
+		OBJ_231 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -package-description-version 5.3.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		OBJ_232 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -package-description-version 5.3.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		OBJ_237 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		OBJ_238 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		OBJ_242 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/Down/Source/cmark",
+					"$(SRCROOT)/Parma.xcodeproj/GeneratedModuleMap/libcmark",
+				);
+				INFOPLIST_FILE = Parma.xcodeproj/ParmaTests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/Parma.xcodeproj/GeneratedModuleMap/libcmark/module.modulemap";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = ParmaTests;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_243 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/Down/Source/cmark",
+					"$(SRCROOT)/Parma.xcodeproj/GeneratedModuleMap/libcmark",
+				);
+				INFOPLIST_FILE = Parma.xcodeproj/ParmaTests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/Parma.xcodeproj/GeneratedModuleMap/libcmark/module.modulemap";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = ParmaTests;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_255 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = NO;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/Down/Source/cmark",
+				);
+				INFOPLIST_FILE = Parma.xcodeproj/libcmark_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = libcmark;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				TARGET_NAME = libcmark;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_256 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = NO;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/Down/Source/cmark",
+				);
+				INFOPLIST_FILE = Parma.xcodeproj/libcmark_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = libcmark;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				TARGET_NAME = libcmark;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+					"DEBUG=1",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.16;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE DEBUG";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.16;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		OBJ_141 /* Build configuration list for PBXNativeTarget "Down" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_142 /* Debug */,
+				OBJ_143 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_2 /* Build configuration list for PBXProject "Parma" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_213 /* Build configuration list for PBXNativeTarget "DownPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_214 /* Debug */,
+				OBJ_215 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_219 /* Build configuration list for PBXNativeTarget "Parma" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_220 /* Debug */,
+				OBJ_221 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_230 /* Build configuration list for PBXNativeTarget "ParmaPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_231 /* Debug */,
+				OBJ_232 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_236 /* Build configuration list for PBXAggregateTarget "ParmaPackageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_237 /* Debug */,
+				OBJ_238 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_241 /* Build configuration list for PBXNativeTarget "ParmaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_242 /* Debug */,
+				OBJ_243 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_254 /* Build configuration list for PBXNativeTarget "libcmark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_255 /* Debug */,
+				OBJ_256 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = OBJ_1 /* Project object */;
+}

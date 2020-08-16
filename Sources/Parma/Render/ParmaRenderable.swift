@@ -35,27 +35,27 @@ public protocol ParmaRenderable {
 }
 
 extension ParmaRenderable {
-    func plainText(_ text: String) -> Text {
+    public func plainText(_ text: String) -> Text {
         Text(text)
     }
     
-    func strong(textView: Text) -> Text {
+    public func strong(textView: Text) -> Text {
         textView.bold()
     }
     
-    func emphasis(textView: Text) -> Text {
+    public func emphasis(textView: Text) -> Text {
         textView.italic()
     }
     
-    func link(textView: Text, destination: String?) -> Text {
+    public func link(textView: Text, destination: String?) -> Text {
         return textView
     }
     
-    func code(_ text: String) -> Text {
+    public func code(_ text: String) -> Text {
         Text(text).font(.system(.body, design: .monospaced))
     }
     
-    func heading(level: HeadingLevel?, textView: Text) -> Text {
+    public func heading(level: HeadingLevel?, textView: Text) -> Text {
         switch level {
         case .one:
             return textView.font(.largeTitle)
@@ -68,19 +68,19 @@ extension ParmaRenderable {
         }
     }
     
-    func paragraph(text: String) -> Text {
+    public func paragraph(text: String) -> Text {
         Text(text).font(.body)
     }
 
-    func headingBlock(level: HeadingLevel?, view: AnyView) -> AnyView {
+    public func headingBlock(level: HeadingLevel?, view: AnyView) -> AnyView {
         AnyView(view.padding(.bottom, 12))
     }
     
-    func paragraphBlock(view: AnyView) -> AnyView {
+    public func paragraphBlock(view: AnyView) -> AnyView {
         AnyView(view.padding(.bottom, 8))
     }
     
-    func listItem(view: AnyView) -> AnyView {
+    public func listItem(view: AnyView) -> AnyView {
         let bullet = "•"
         return AnyView(
             HStack(alignment: .top, spacing: 4) {
@@ -90,7 +90,7 @@ extension ParmaRenderable {
         )
     }
     
-    func imageView(with urlString: String) -> AnyView {
+    public func imageView(with urlString: String) -> AnyView {
         return AnyView(
             Text(urlString)
         )

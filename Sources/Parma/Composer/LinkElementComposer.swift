@@ -21,7 +21,7 @@ class LinkElementComposer: InlineElementComposer {
         destination = nil
     }
     
-    func text(in context: ComposingContext, render: ExperimentalMarkdownRenderable) -> Text {
+    func text(in context: ComposingContext, render: ParmaRenderable) -> Text {
         return render.link(textView: context.concatenatedText, destination: destination)
     }
 }

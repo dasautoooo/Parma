@@ -396,6 +396,13 @@
 			path = Render;
 			sourceTree = "<group>";
 		};
+		D709BEA424E905B40070BEE2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		OBJ_10 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -530,7 +537,7 @@
 			path = "Custom Attributes";
 			sourceTree = "<group>";
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -539,8 +546,8 @@
 				OBJ_14 /* Dependencies */,
 				OBJ_134 /* Products */,
 				OBJ_139 /* README.md */,
+				D709BEA424E905B40070BEE2 /* Frameworks */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_50 /* Helpers */ = {
@@ -827,6 +834,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftMigration = 9999;
+				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 9999;
 			};
 			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "Parma" */;
@@ -836,15 +844,15 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_134 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				"Down::Down" /* Down */,
-				"Down::SwiftPMPackageDescription" /* DownPackageDescription */,
 				"Parma::Parma" /* Parma */,
+				"Down::Down" /* Down */,
 				"Parma::SwiftPMPackageDescription" /* ParmaPackageDescription */,
+				"Down::SwiftPMPackageDescription" /* DownPackageDescription */,
 				"Parma::ParmaPackageTests::ProductTarget" /* ParmaPackageTests */,
 				"Parma::ParmaTests" /* ParmaTests */,
 				"Down::libcmark" /* libcmark */,
@@ -1357,6 +1365,7 @@
 					"SWIFT_PACKAGE=1",
 					"DEBUG=1",
 				);
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.16;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
@@ -1382,6 +1391,7 @@
 					"$(inherited)",
 					"SWIFT_PACKAGE=1",
 				);
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.16;
 				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";

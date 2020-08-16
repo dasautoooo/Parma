@@ -11,7 +11,7 @@
 import SwiftUI
 import Down
 
-typealias Text = SwiftUI.Text
+public typealias Text = SwiftUI.Text
 
 @available(iOS 14.0, *)
 public class Parma: NSObject {

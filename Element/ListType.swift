@@ -10,6 +10,6 @@
 
 import Foundation
 
-enum ListType: String {
+public enum ListType: String {
     case ordered, bullet
 }

@@ -1,4 +1,4 @@
 module libcmark {
-    umbrella "/Users/leonard/Documents/Development/Parma/.build/checkouts/Down/Source/cmark"
+    umbrella "../../../.build/checkouts/Down/Source/cmark"
     export *
 }

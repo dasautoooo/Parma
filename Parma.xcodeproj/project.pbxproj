@@ -40,6 +40,7 @@
 		D709BE8A24E830000070BEE2 /* ListElementComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709BE8924E830000070BEE2 /* ListElementComposer.swift */; };
 		D709BE8C24E830250070BEE2 /* ListItemElementComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709BE8B24E830250070BEE2 /* ListItemElementComposer.swift */; };
 		D709BE8E24E830680070BEE2 /* UnknownElementComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709BE8D24E830680070BEE2 /* UnknownElementComposer.swift */; };
+		D709BEEE24E90EF40070BEE2 /* ParmaCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709BEED24E90EF40070BEE2 /* ParmaCore.swift */; };
 		OBJ_145 /* BaseNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* BaseNode.swift */; };
 		OBJ_146 /* BlockQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* BlockQuote.swift */; };
 		OBJ_147 /* Code.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* Code.swift */; };
@@ -207,6 +208,7 @@
 		D709BE8924E830000070BEE2 /* ListElementComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListElementComposer.swift; sourceTree = "<group>"; };
 		D709BE8B24E830250070BEE2 /* ListItemElementComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemElementComposer.swift; sourceTree = "<group>"; };
 		D709BE8D24E830680070BEE2 /* UnknownElementComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnknownElementComposer.swift; sourceTree = "<group>"; };
+		D709BEED24E90EF40070BEE2 /* ParmaCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParmaCore.swift; sourceTree = "<group>"; };
 		"Down::Down::Product" /* Down.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Down.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Down::libcmark::Product" /* libcmark.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libcmark.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_100 /* cmark_ctype.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = cmark_ctype.c; sourceTree = "<group>"; };
@@ -605,6 +607,9 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_8 /* Parma */,
+				D709BE6E24E82B010070BEE2 /* Element */,
+				D709BE7124E82C410070BEE2 /* Composer */,
+				D709BE7424E82CC60070BEE2 /* Render */,
 			);
 			name = Sources;
 			sourceTree = SOURCE_ROOT;
@@ -642,9 +647,7 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_9 /* Parma.swift */,
-				D709BE6E24E82B010070BEE2 /* Element */,
-				D709BE7124E82C410070BEE2 /* Composer */,
-				D709BE7424E82CC60070BEE2 /* Render */,
+				D709BEED24E90EF40070BEE2 /* ParmaCore.swift */,
 			);
 			name = Parma;
 			path = Sources/Parma;
@@ -948,6 +951,7 @@
 				D709BE8624E82F9A0070BEE2 /* ParagraphElementComposer.swift in Sources */,
 				D709BE6724E8287A0070BEE2 /* Element.swift in Sources */,
 				D709BE8024E82F2A0070BEE2 /* LinkElementComposer.swift in Sources */,
+				D709BEEE24E90EF40070BEE2 /* ParmaCore.swift in Sources */,
 				D709BE7A24E82E9B0070BEE2 /* PlainTextComposer.swift in Sources */,
 				D709BE7324E82C7A0070BEE2 /* ElementComposer.swift in Sources */,
 				OBJ_223 /* Parma.swift in Sources */,

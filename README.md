@@ -49,7 +49,7 @@ struct ContentView: View {
 
 Adding `Parma` as a dependency by [using Xcode’s GUI][2], the package url is `https://github.com/dasautoooo/Parma` .
 
-## Advance Customization
+## Appearance Customization
 To be added.
 
 ## Name Origin

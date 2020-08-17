@@ -10,30 +10,60 @@
 
 import SwiftUI
 
+/// The appearance of each element. Create a custom render then conform to this protocol.
 public protocol ParmaRenderable {
+    /// Define the heading text style.
+    /// - Parameters:
+    ///   - level: The level of heading.
+    ///   - textView: The textView generated from captured heading string.
     func heading(level: HeadingLevel?, textView: Text) -> Text
-
+    
+    /// Define the paragraph text style.
+    /// - Parameter text: The text string captured from paragraph.
     func paragraph(text: String) -> Text
-
+    
+    /// Define the text style for plain text. Do NOT recommend to alter this if there's no special purpose.
+    /// - Parameter text: The text string captured from markdown.
     func plainText(_ text: String) -> Text
-
+    
+    /// Define the strong text style.
+    /// - Parameter textView: The textView generated from captured strong string.
     func strong(textView: Text) -> Text
-
+    
+    /// Define the emphasis text style.
+    /// - Parameter textView: The textView generated from captured emphasis string.
     func emphasis(textView: Text) -> Text
-
+    
+    /// Define the link text style.
+    /// - Parameters:
+    ///   - textView: The textView generated from captured link string.
+    ///   - destination: The destination of the link.
     func link(textView: Text, destination: String?) -> Text
-
+    
+    /// Define the code text style.
+    /// - Parameter text: The text string captured from code.
     func code(_ text: String) -> Text
-
+    
+    /// Define the style of heading view.
+    /// - Parameters:
+    ///   - level: The level of heading.
+    ///   - view: The view contains heading text.
     func headingBlock(level: HeadingLevel?, view: AnyView) -> AnyView
-
+    
+    /// Define the style of paragraph view.
+    /// - Parameter view: The view contains view(s) which belong(s) to this paragraph.
     func paragraphBlock(view: AnyView) -> AnyView
-
+    
+    /// Define the style of list item.
+    /// - Parameter view: The view contains view(s) which belong(s) to this item.
     func listItem(view: AnyView) -> AnyView
-
+    
+    /// Define the style of image view.
+    /// - Parameter urlString: The url string for this image view.
     func imageView(with urlString: String) -> AnyView
 }
 
+// MARK: - Default render style
 extension ParmaRenderable {
     public func plainText(_ text: String) -> Text {
         Text(text)

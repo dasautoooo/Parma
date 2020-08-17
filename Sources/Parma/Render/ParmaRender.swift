@@ -10,4 +10,5 @@
 
 import Foundation
 
+/// The concrete class of the default render style. Create a new render if custom styles are needed.
 final public class ParmaRender: ParmaRenderable { }

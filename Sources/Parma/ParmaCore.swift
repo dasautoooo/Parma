@@ -42,12 +42,8 @@ class ParmaCore: NSObject {
     
     var composedView: AnyView {
         AnyView(
-            ScrollView {
-                LazyVStack(alignment: .leading) {
-                    ForEach(0..<views.count) { index in
-                        self.views[index]
-                    }
-                }.padding(.horizontal, 8)
+            ForEach(0..<views.count) { index in
+                self.views[index]
             }
         )
     }

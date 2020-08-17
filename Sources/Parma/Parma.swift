@@ -31,21 +31,21 @@ public struct Parma: View {
     /// - Parameters:
     ///   - markdown: The markdown string for generating Parma view.
     ///   - render: Specify a custom render to give the view different appearance. Default is nil, will use `ParmaRender`.
-    ///   - errorContent: The content view to display if the given markdown string is invalid.
-    public init(markdown: String, render: ParmaRenderable? = nil, errorContent: (Error) -> AnyView) {
+    ///   - errorContent: The content view to display if some error occurred while parsing markdown.
+    public init(_ markdown: String, render: ParmaRenderable? = nil, errorContent: ((Error) -> AnyView)? = nil) {
         core = nil
         errorView = nil
         content = nil
         
         do {
-            core = try ParmaCore(markdown: markdown)
+            core = try ParmaCore(markdown)
             if let render = render {
                 core?.render = render
             }
             core?.start()
             content = core?.composedView
         } catch {
-            errorView = errorContent(error)
+            errorView = errorContent?(error)
         }
     }
 }

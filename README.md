@@ -9,10 +9,7 @@ struct ContentView: View {
     var markdown = "I'm **Strong**."
     
     var body: some View {
-        Parma(markdown: markdown) { (error) -> AnyView in
-	    // Display this when the markdown is invalid.
-            AnyView(EmptyView())
-        }
+        Parma(markdown)
     }
 }
 ```
@@ -53,7 +50,7 @@ Adding `Parma` as a dependency by [using Xcode’s GUI][2], the package url is `
 To be added.
 
 ## Name Origin
-[Parma][3] is a city in the northern Italian famous for its architecture, music and art. The reason of choosing this city name as the project name is that there was a famous typographer spent most his lifetime living and working in this city - [Giambattista Bodoni][4].
+[Parma][3] is a city in the northern Italy, which is famous for its architecture, music and art. The reason of choosing this city name as the project name is that there was a famous typographer spent most his lifetime living and working in this city - [Giambattista Bodoni][4].
 
 Bodoni was an Italian typographer, type-designer in Parma. During his lifespan, he designed many typefaces that known as [Bodoni][5] nowadays. Each Mac has Bodoni font installed.
 

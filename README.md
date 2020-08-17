@@ -1,5 +1,5 @@
 # Parma
-Display Markdown using pure SwiftUI components. Taking advantages of `ViewBuilder` to make custom appearance for `Text` and `View`.
+Display Markdown using pure SwiftUI components. Taking advantages of `ViewBuilder` to make custom appearances for `Text` and `View`.
 
 ## Example
 ```swift
@@ -10,7 +10,7 @@ struct ContentView: View {
     
     var body: some View {
         Parma(markdown: markdown) { (error) -> AnyView in
-			// Display this when the markdown is invalid.
+	    // Display this when the markdown is invalid.
             AnyView(EmptyView())
         }
     }
@@ -23,7 +23,7 @@ struct ContentView: View {
 * Heading level 1-6
 * Paragraph
 *  Multi-level bullet list
-* Image (Need extra configuration)
+* Image (Needs extra configurations)
 * Inline text
 	* Strong
 	* Emphasis

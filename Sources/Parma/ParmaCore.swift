@@ -42,7 +42,7 @@ class ParmaCore: NSObject {
     
     var composedView: AnyView {
         AnyView(
-            ForEach(0..<views.count) { index in
+            ForEach(0..<views.count, id: \.self) { index in
                 self.views[index]
             }
         )

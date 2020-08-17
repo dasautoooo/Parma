@@ -33,7 +33,7 @@ class ListItemElementComposer: BlockElementComposer {
             let count = views.count
             return render.listItem(view: AnyView(
                 VStack(alignment: .leading) {
-                    ForEach(0..<count) { index in
+                    ForEach(0..<count, id: \.self) { index in
                         views[index]
                     }
                 }

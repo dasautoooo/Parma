@@ -16,7 +16,7 @@ class HeadingElementComposer: BlockElementComposer {
     
     func willStart(in context: ComposingContext) {
         headingLevel = HeadingLevel.level(context.attributes["level"] ?? "6")
-        print("\(count) Heading level set to: " + "\(String(describing: headingLevel))")
+//        print("\(count) Heading level set to: " + "\(String(describing: headingLevel))")
         count += 1
     }
     

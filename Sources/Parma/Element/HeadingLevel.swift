@@ -10,6 +10,7 @@
 
 import Foundation
 
+/// The markdown heading levels.
 public enum HeadingLevel: String {
     case one = "1"
     case two = "2"
@@ -18,6 +19,7 @@ public enum HeadingLevel: String {
     case five = "5"
     case six = "6"
     
+    /// Get `HeadingLevel` by string. For example, input "1" will return `HeadingLevel.one`.
     static func level(_ text: String) -> HeadingLevel {
         switch text {
         case "1":

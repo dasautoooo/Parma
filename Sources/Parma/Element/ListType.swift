@@ -10,6 +10,7 @@
 
 import Foundation
 
+/// The types for markdown list.
 public enum ListType: String {
     case ordered, bullet
 }

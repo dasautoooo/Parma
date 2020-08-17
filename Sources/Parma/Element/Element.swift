@@ -10,9 +10,11 @@
 
 import Foundation
 
+/// Markdown elements.
 enum Element: Hashable {
     case text, heading(level: HeadingLevel?), paragraph, list(type: ListType?), item, image(destination: String?), strong, emphasis, link, code, unknown, codeBlock, blockQuote
     
+    /// If the specific element works as inline.
     var isInline: Bool {
         switch self {
         case .text, .strong, .emphasis, .link, .code:
@@ -22,6 +24,7 @@ enum Element: Hashable {
         }
     }
     
+    /// Get `Element` by string. For example, input "strong" will return `Element.strong`.
     static func element(_ elementText: String) -> Element {
         switch elementText {
         case "text":
@@ -53,6 +56,7 @@ enum Element: Hashable {
         }
     }
     
+    /// The readable name for the element.
     func name() -> String {
         switch self {
         case .heading(_):

@@ -12,7 +12,7 @@ import Foundation
 
 /// Markdown elements.
 enum Element: Hashable {
-    case text, heading(level: HeadingLevel?), paragraph, list(type: ListType?), item, image(destination: String?), strong, emphasis, link, code, unknown, codeBlock, blockQuote
+    case text, heading, paragraph, list, item, image, strong, emphasis, link, code, unknown, codeBlock, blockQuote
     
     /// If the specific element works as inline.
     var isInline: Bool {
@@ -38,15 +38,15 @@ enum Element: Hashable {
         case "code":
             return Self.code
         case "heading":
-            return Self.heading(level: nil)
+            return Self.heading
         case "paragraph":
             return Self.paragraph
         case "list":
-            return Self.list(type: nil)
+            return Self.list
         case "item":
             return Self.item
         case "image":
-            return Self.image(destination: nil)
+            return Self.image
 //        case "code_block":
 //            return Self.codeBlock
 //        case "block_quote":
@@ -59,15 +59,15 @@ enum Element: Hashable {
     /// The readable name for the element.
     func name() -> String {
         switch self {
-        case .heading(_):
+        case .heading:
             return "heading"
         case .paragraph:
             return "paragraph"
-        case .list(_):
+        case .list:
             return "list"
         case .item:
             return "item"
-        case .image(_):
+        case .image:
             return "image"
         case .text:
             return "text"
@@ -86,9 +86,5 @@ enum Element: Hashable {
         default:
             return "unknown"
         }
-    }
-    
-    static func == (lhs: Element, rhs: Element) -> Bool {
-        return lhs.name() == rhs.name()
     }
 }

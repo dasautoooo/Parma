@@ -19,7 +19,7 @@ struct ContentView: View {
 ### Already Supported
 * Heading level 1-6
 * Paragraph
-*  Multi-level bullet list
+* Multi-level bullet list
 * Image (Needs extra configurations)
 * Inline text
 	* Strong

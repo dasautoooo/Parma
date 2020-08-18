@@ -88,9 +88,9 @@ class ParmaCore: NSObject {
         blockComposers =
         [
             .paragraph : paragraphElementComposer,
-            .heading(level: nil) : headingElementComposer,
-            .image(destination: nil) : imageElementComposer,
-            .list(type: nil) : listElementComposer,
+            .heading : headingElementComposer,
+            .image : imageElementComposer,
+            .list : listElementComposer,
             .item : listItemElementComposer,
             .unknown : unknownElementComposer
         ]
@@ -106,18 +106,7 @@ class ParmaCore: NSObject {
 extension ParmaCore: XMLParserDelegate {
     func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String] = [:]) {
         // Start new element
-        var element = Element.unknown
-        
-        switch elementName {
-        case "heading":
-            guard let level = attributeDict["level"] else { break }
-            element = Element.heading(level: HeadingLevel.level(level))
-        case "image":
-            guard let destination = attributeDict["destination"] else { break }
-            element = Element.image(destination: destination)
-        default:
-            element = Element.element(elementName)
-        }
+        let element = Element.element(elementName)
         
         if element != .unknown {
             context.enter(in: element)

@@ -13,9 +13,9 @@ struct ContentView: View {
     }
 }
 ```
+For more examples, please refer to [demo][1] app.
 
 ## Markdown Support
-
 ### Already Supported
 * Heading level 1-6
 * Paragraph
@@ -25,7 +25,7 @@ struct ContentView: View {
 	* Strong
 	* Emphasis
 	* Code
-	
+			
 ### Possibly Support in Future Versions
 * Divider
 * Multi-level ordered list
@@ -42,9 +42,9 @@ struct ContentView: View {
 * iOS 14.0 / macOS 11.0 or later deployment targets
 
 ### Swift Package Manager
-[Swift Package Manager][1] is a tool for managing the distribution of Swift code. It’s integrated with the Swift build system to automate the process of downloading, compiling, and linking dependencies on all platforms.
+[Swift Package Manager][2] is a tool for managing the distribution of Swift code. It’s integrated with the Swift build system to automate the process of downloading, compiling, and linking dependencies on all platforms.
 
-Adding `Parma` as a dependency by [using Xcode’s GUI][2], the package url is `https://github.com/dasautoooo/Parma` .
+Adding `Parma` as a dependency by [using Xcode’s GUI][3], the package url is `https://github.com/dasautoooo/Parma` .
 
 ## Appearance Customization
 To customize `Text` styles and `View`s, create a new render which conform to protocol `ParmaRenderable`, and only reimplement those that fit your purposes. Finally, assign the customized render as a new render when create `Parma` view.
@@ -65,7 +65,7 @@ struct MyRender: ParmaRenderable {
 }
 ```
 
-There's a [DemoApp][7] that modified some of these delegate methods below for everyone to take as a reference.
+There's a [DemoApp][4] that modified some of these delegate methods below for everyone to take as a reference.
 
 ```swift
 /// Define the heading text style.
@@ -120,17 +120,18 @@ func imageView(with urlString: String) -> AnyView
 ```
 
 ## Name Origin
-[Parma][3] is a city in the northern Italy, which is famous for its architecture, music and art. The reason of choosing this city name as the project name is [Giambattista Bodoni][4], a famous typographer, who spent most his lifetime living and working in this city.
+[Parma][5] is a city in the northern Italy, which is famous for its architecture, music and art. The reason of choosing this city name as the project name is [Giambattista Bodoni][6], a famous typographer, who spent most his lifetime living and working in this city.
 
-Bodoni was an Italian typographer, type-designer in Parma. During his lifespan, he designed many typefaces that known as [Bodoni][5] nowadays. Each Mac has Bodoni font installed, and free to use.
+Bodoni was an Italian typographer, type-designer in Parma. During his lifespan, he designed many typefaces that known as [Bodoni][7] nowadays. Each Mac has Bodoni font installed, and free to use.
 
 ## Credit
-The package is built upon [Down][6], which is a markdown parser in Swift.
+The package is built upon [Down][8], which is a markdown parser in Swift.
 
-[1]:	https://swift.org/package-manager/
-[2]:	https://developer.apple.com/documentation/xcode/adding_package_dependencies_to_your_app
-[3]:	https://en.wikipedia.org/wiki/Parma
-[4]:	https://en.wikipedia.org/wiki/Giambattista_Bodoni
-[5]:	https://en.wikipedia.org/wiki/Bodoni
-[6]:	https://github.com/iwasrobbed/Down
-[7]:	https://github.com/dasautoooo/ParmaDemo
+[1]:	https://github.com/dasautoooo/ParmaDemo
+[2]:	https://swift.org/package-manager/
+[3]:	https://developer.apple.com/documentation/xcode/adding_package_dependencies_to_your_app
+[4]:	https://github.com/dasautoooo/ParmaDemo
+[5]:	https://en.wikipedia.org/wiki/Parma
+[6]:	https://en.wikipedia.org/wiki/Giambattista_Bodoni
+[7]:	https://en.wikipedia.org/wiki/Bodoni
+[8]:	https://github.com/iwasrobbed/Down

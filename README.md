@@ -65,7 +65,7 @@ struct MyRender: ParmaRenderable {
 }
 ```
 
-There's a DemoApp that modified some of these delegate methods below for everyone to take as a reference.
+There's a [DemoApp][7] that modified some of these delegate methods below for everyone to take as a reference.
 
 ```swift
 /// Define the heading text style.
@@ -133,3 +133,4 @@ The package is built upon [Down][6], which is a markdown parser in Swift.
 [4]:	https://en.wikipedia.org/wiki/Giambattista_Bodoni
 [5]:	https://en.wikipedia.org/wiki/Bodoni
 [6]:	https://github.com/iwasrobbed/Down
+[7]:	https://github.com/dasautoooo/ParmaDemo

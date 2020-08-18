@@ -24,7 +24,11 @@ class ParagraphElementComposer: BlockElementComposer {
     func view(in context: ComposingContext, render: ParmaRenderable) -> AnyView {
         let maxIndex = context.views.count
         let minIndex = index.last!
+        
+        // Get every view inside this element scope
         let views = Array(context.views[minIndex..<maxIndex])
+        
+        // Remove those views from context
         context.views = context.views.dropLast(maxIndex-minIndex)
 
         if views.count == 1, let view = views.first {

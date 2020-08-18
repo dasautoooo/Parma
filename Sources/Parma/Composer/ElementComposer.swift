@@ -12,13 +12,25 @@ import SwiftUI
 
 @available(iOS 14.0, *)
 protocol InlineElementComposer: Composer {
+    /// Provide relevant information to the render to generate `Text` component.
+    /// - Parameters:
+    ///   - context: The composing context inside the element.
+    ///   - render: A set of delegate methods for generating `View`s.
     func text(in context: ComposingContext, render: ParmaRenderable) -> Text
 }
 
 @available(iOS 14.0, *)
 protocol BlockElementComposer: Composer {
+    ///  Provide relevant information to the render to generate `Text` component, if the element has the ability.
+    /// - Parameters:
+    ///   - context: The composing context inside the element.
+    ///   - render: A set of delegate methods for generating `View`s.
     func text(in context: ComposingContext, render: ParmaRenderable) -> Text?
     
+    /// Provide relevant information to the render to generate `View` component.
+    /// - Parameters:
+    ///   - context: The composing context inside the element.
+    ///   - render: A set of delegate methods for generating `View`s.
     func view(in context: ComposingContext, render: ParmaRenderable) -> AnyView
 }
 

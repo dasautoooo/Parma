@@ -318,7 +318,7 @@
 		OBJ_98 /* DebugVisitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugVisitor.swift; sourceTree = "<group>"; };
 		OBJ_99 /* ListItemPrefixGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemPrefixGenerator.swift; sourceTree = "<group>"; };
 		"Parma::Parma::Product" /* Parma.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parma.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"Parma::ParmaTests::Product" /* ParmaTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = ParmaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		"Parma::ParmaTests::Product" /* ParmaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ParmaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -359,6 +359,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D7FE77A324EEBB020077853A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		OBJ_102 /* Enums & Options */ = {
 			isa = PBXGroup;
 			children = (
@@ -563,7 +570,7 @@
 			path = Nodes;
 			sourceTree = "<group>";
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -573,8 +580,8 @@
 				OBJ_157 /* Products */,
 				OBJ_162 /* LICENSE */,
 				OBJ_163 /* README.md */,
+				D7FE77A324EEBB020077853A /* Frameworks */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_64 /* Styling */ = {
@@ -832,6 +839,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftMigration = 9999;
+				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 9999;
 			};
 			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "Parma" */;
@@ -841,7 +849,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_157 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";

@@ -1,5 +1,5 @@
 import XCTest
-@testable import Parma
+//@testable import Parma
 
 final class ParmaTests: XCTestCase {
     func testExample() {

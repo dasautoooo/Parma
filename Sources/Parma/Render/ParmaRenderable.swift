@@ -107,7 +107,7 @@ extension ParmaRenderable {
     }
     
     public func paragraphBlock(view: AnyView) -> AnyView {
-        AnyView(view.padding(.bottom, 8))
+        AnyView(view.fixedSize(horizontal: false, vertical: true).padding(.bottom, 8))
     }
     
     public func listItem(view: AnyView) -> AnyView {

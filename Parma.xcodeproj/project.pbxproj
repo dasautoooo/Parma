@@ -21,6 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		D7581646251F4BFA002684A0 /* DividerElementComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7581645251F4BFA002684A0 /* DividerElementComposer.swift */; };
 		OBJ_169 /* BaseNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* BaseNode.swift */; };
 		OBJ_170 /* BlockQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* BlockQuote.swift */; };
 		OBJ_171 /* Code.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* Code.swift */; };
@@ -189,6 +190,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D7581645251F4BFA002684A0 /* DividerElementComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerElementComposer.swift; sourceTree = "<group>"; };
 		"Down::Down::Product" /* Down.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Down.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Down::libcmark::Product" /* libcmark.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libcmark.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_10 /* CodeElementComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeElementComposer.swift; sourceTree = "<group>"; };
@@ -700,6 +702,7 @@
 				OBJ_14 /* EmphasisElementComposer.swift */,
 				OBJ_15 /* HeadingElementComposer.swift */,
 				OBJ_16 /* ImageElementComposer.swift */,
+				D7581645251F4BFA002684A0 /* DividerElementComposer.swift */,
 				OBJ_17 /* LinkElementComposer.swift */,
 				OBJ_18 /* ListElementComposer.swift */,
 				OBJ_19 /* ListItemElementComposer.swift */,
@@ -966,6 +969,7 @@
 				OBJ_262 /* HeadingLevel.swift in Sources */,
 				OBJ_263 /* ListType.swift in Sources */,
 				OBJ_264 /* Parma.swift in Sources */,
+				D7581646251F4BFA002684A0 /* DividerElementComposer.swift in Sources */,
 				OBJ_265 /* ParmaCore.swift in Sources */,
 				OBJ_266 /* ParmaRender.swift in Sources */,
 				OBJ_267 /* ParmaRenderable.swift in Sources */,

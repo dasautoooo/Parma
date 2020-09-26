@@ -33,6 +33,7 @@ class ParmaCore: NSObject {
     private let imageElementComposer = ImageElementComposer()
     private let listElementComposer = ListElementComposer()
     private let listItemElementComposer = ListItemElementComposer()
+    private let dividerElementComposer = DividerElementComposer()
     private let unknownElementComposer = UnknownElementComposer()
     
     private let parser: XMLParser
@@ -66,6 +67,7 @@ class ParmaCore: NSObject {
     convenience init(_ markdown: String) throws {
         let down = Down(markdownString: markdown)
         let xml = try down.toXML()
+        print(xml)
         self.init(xmlData: Data(xml.utf8))
     }
     
@@ -92,6 +94,7 @@ class ParmaCore: NSObject {
             .image : imageElementComposer,
             .list : listElementComposer,
             .item : listItemElementComposer,
+            .divider : dividerElementComposer,
             .unknown : unknownElementComposer
         ]
     }

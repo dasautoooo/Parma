@@ -13,6 +13,10 @@
 		D7548DCC24EEC81800600D43 /* Parma.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D7FE786524EEC78C0077853A /* Parma.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D7548DCF24EECA8D00600D43 /* SampleMarkdown.md in Resources */ = {isa = PBXBuildFile; fileRef = D7548DCE24EECA8D00600D43 /* SampleMarkdown.md */; };
 		D7548DD024EECA8D00600D43 /* SampleMarkdown.md in Resources */ = {isa = PBXBuildFile; fileRef = D7548DCE24EECA8D00600D43 /* SampleMarkdown.md */; };
+		D7581641251F36AC002684A0 /* Down.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7FE786724EEC78C0077853A /* Down.framework */; };
+		D7581642251F36AC002684A0 /* Down.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D7FE786724EEC78C0077853A /* Down.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D7581643251F36AC002684A0 /* libcmark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7FE786B24EEC78C0077853A /* libcmark.framework */; };
+		D7581644251F36AC002684A0 /* libcmark.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D7FE786B24EEC78C0077853A /* libcmark.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D7FE784C24EEC75B0077853A /* SampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FE783924EEC7590077853A /* SampleApp.swift */; };
 		D7FE784D24EEC75B0077853A /* SampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FE783924EEC7590077853A /* SampleApp.swift */; };
 		D7FE784E24EEC75B0077853A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FE783A24EEC7590077853A /* ContentView.swift */; };
@@ -59,6 +63,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				D7581642251F36AC002684A0 /* Down.framework in Embed Frameworks */,
+				D7581644251F36AC002684A0 /* libcmark.framework in Embed Frameworks */,
 				D7548DC924EEC7E200600D43 /* Parma.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -95,6 +101,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7581641251F36AC002684A0 /* Down.framework in Frameworks */,
+				D7581643251F36AC002684A0 /* libcmark.framework in Frameworks */,
 				D7548DC824EEC7E200600D43 /* Parma.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

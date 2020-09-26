@@ -34,12 +34,16 @@ Parma is famous for its food and rich gastronomical tradition: two of its specia
 	* **Amoretti Brothers**, typographers and typefounders, Bodoni's opponents
 	* **Giambattista Bodoni**, typographer
 
+---
+
 # Giambattista Bodoni
 **Giambattista Bodoni** was an Italian typographer, type-designer, compositor, printer and publisher in **Parma**.
 ![][image-3]
 He first took the type-designs of Pierre Simon Fournier as his exemplars, but afterwards became an admirer of the more modelled types of **John Baskerville**; and he and Firmin Didot evolved a style of type called "Modern," in which the letters are cut in such a way as to produce a strong contrast between the thick and thin parts of their body. Bodoni designed many typefaces, each one in a large range of type sizes. He is even more admired as a compositor than as a type designer, as the large range of sizes which he cut enabled him to compose his pages with the greatest possible subtlety of spacing. Like Baskerville, he sets off his texts with wide margins and uses little or no illustrations or decorations.
 ![][image-4]
 There have been several modern revivals of his typefaces, all called *Bodoni*. They are often used as display faces.
+
+---
 
 # Bodoni
 **Bodoni** is the name given to the serif typefaces first designed by **Giambattista Bodoni** (1740–1813) in the late eighteenth century and frequently revived since. Bodoni's typefaces are classified as **Didone** or **modern**. Bodoni followed the ideas of John Baskerville, as found in the printing type **Baskerville**—increased stroke contrast reflecting developing printing technology and a more vertical axis—but he took them to a more extreme conclusion. Bodoni had a long career and his designs changed and varied, ending with a typeface of a slightly condensed underlying structure with flat, unbracketed serifs, extreme contrast between thick and thin strokes, and an overall geometric construction.

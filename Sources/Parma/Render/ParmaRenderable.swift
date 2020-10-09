@@ -92,9 +92,17 @@ extension ParmaRenderable {
         case .two:
             return textView.font(.title)
         case .three:
-            return textView.font(.title2)
+            if #available(iOS 14.0, *) {
+                return textView.font(.title2)
+            } else {
+                return textView.font(.headline)
+            }
         default:
-            return textView.font(.title3)
+            if #available(iOS 14.0, *) {
+                return textView.font(.title2)
+            } else {
+                return textView.font(.subheadline)
+            }
         }
     }
     

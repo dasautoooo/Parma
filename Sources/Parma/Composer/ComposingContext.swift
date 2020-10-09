@@ -10,7 +10,7 @@
 
 import SwiftUI
 
-@available(iOS 14.0, *)
+@available(iOS 13.0, *)
 class ComposingContext {
     /// Element stack.
     var stack = [Element]()

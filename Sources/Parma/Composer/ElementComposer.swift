@@ -19,7 +19,7 @@ protocol InlineElementComposer: Composer {
     func text(in context: ComposingContext, render: ParmaRenderable) -> Text
 }
 
-@available(iOS 13.0, *)
+@available(iOS 13.0, macOS 10.15, *)
 protocol BlockElementComposer: Composer {
     ///  Provide relevant information to the render to generate `Text` component, if the element has the ability.
     /// - Parameters:

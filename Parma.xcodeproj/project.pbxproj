@@ -317,7 +317,7 @@
 		OBJ_97 /* AttributedStringVisitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedStringVisitor.swift; sourceTree = "<group>"; };
 		OBJ_98 /* DebugVisitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugVisitor.swift; sourceTree = "<group>"; };
 		OBJ_99 /* ListItemPrefixGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemPrefixGenerator.swift; sourceTree = "<group>"; };
-		"Parma::Parma::Product" /* Parma.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parma.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"Parma::Parma::Product" /* Parma.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Parma.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Parma::ParmaTests::Product" /* ParmaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ParmaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -1156,9 +1156,9 @@
 					"$(SRCROOT)/Parma.xcodeproj/GeneratedModuleMap/libcmark",
 				);
 				INFOPLIST_FILE = Parma.xcodeproj/Parma_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/Parma.xcodeproj/GeneratedModuleMap/libcmark/module.modulemap";
@@ -1188,9 +1188,9 @@
 					"$(SRCROOT)/Parma.xcodeproj/GeneratedModuleMap/libcmark",
 				);
 				INFOPLIST_FILE = Parma.xcodeproj/Parma_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/Parma.xcodeproj/GeneratedModuleMap/libcmark/module.modulemap";
@@ -1259,8 +1259,8 @@
 					"$(SRCROOT)/Parma.xcodeproj/GeneratedModuleMap/libcmark",
 				);
 				INFOPLIST_FILE = Parma.xcodeproj/ParmaTests_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -1288,8 +1288,8 @@
 					"$(SRCROOT)/Parma.xcodeproj/GeneratedModuleMap/libcmark",
 				);
 				INFOPLIST_FILE = Parma.xcodeproj/ParmaTests_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -1349,7 +1349,7 @@
 					"DEBUG=1",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1406,7 +1406,7 @@
 					"SWIFT_PACKAGE=1",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;

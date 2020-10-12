@@ -63,6 +63,8 @@ public protocol ParmaRenderable {
     func imageView(with urlString: String) -> AnyView
     
     func divider() -> AnyView
+    
+    func blockQuote(view: AnyView) -> AnyView
 }
 
 // MARK: - Default render style
@@ -123,13 +125,17 @@ extension ParmaRenderable {
     }
     
     public func imageView(with urlString: String) -> AnyView {
-        return AnyView(
-            VStack(alignment: .leading) {
-                Text("Image Link: ")
-                Text(urlString)
-                    .padding()
-            }
-        )
+        if let url = URL(string: urlString) {
+            return AnyView(Link("Image", destination: url))
+        } else {
+            return AnyView(
+                VStack(alignment: .leading) {
+                    Text("Image Link: ")
+                    Text(urlString)
+                        .padding()
+                }
+            )
+        }
     }
     
     public func divider() -> AnyView {
@@ -138,6 +144,12 @@ extension ParmaRenderable {
                 .foregroundColor(.secondary)
                 .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: 1, alignment: .center)
                 .padding(8)
+        )
+    }
+    
+    public func blockQuote(view: AnyView) -> AnyView {
+        return AnyView(
+            BlockQuoteView(view: view)
         )
     }
 }

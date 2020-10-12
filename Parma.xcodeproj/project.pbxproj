@@ -22,6 +22,7 @@
 
 /* Begin PBXBuildFile section */
 		D7581646251F4BFA002684A0 /* DividerElementComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7581645251F4BFA002684A0 /* DividerElementComposer.swift */; };
+		D758164F251F565F002684A0 /* BlockQuoteElementComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D758164E251F565F002684A0 /* BlockQuoteElementComposer.swift */; };
 		OBJ_169 /* BaseNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* BaseNode.swift */; };
 		OBJ_170 /* BlockQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* BlockQuote.swift */; };
 		OBJ_171 /* Code.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* Code.swift */; };
@@ -191,6 +192,7 @@
 
 /* Begin PBXFileReference section */
 		D7581645251F4BFA002684A0 /* DividerElementComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerElementComposer.swift; sourceTree = "<group>"; };
+		D758164E251F565F002684A0 /* BlockQuoteElementComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockQuoteElementComposer.swift; sourceTree = "<group>"; };
 		"Down::Down::Product" /* Down.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Down.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Down::libcmark::Product" /* libcmark.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libcmark.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_10 /* CodeElementComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeElementComposer.swift; sourceTree = "<group>"; };
@@ -703,6 +705,7 @@
 				OBJ_15 /* HeadingElementComposer.swift */,
 				OBJ_16 /* ImageElementComposer.swift */,
 				D7581645251F4BFA002684A0 /* DividerElementComposer.swift */,
+				D758164E251F565F002684A0 /* BlockQuoteElementComposer.swift */,
 				OBJ_17 /* LinkElementComposer.swift */,
 				OBJ_18 /* ListElementComposer.swift */,
 				OBJ_19 /* ListItemElementComposer.swift */,
@@ -955,6 +958,7 @@
 				OBJ_248 /* Composer.swift in Sources */,
 				OBJ_249 /* ComposingContext.swift in Sources */,
 				OBJ_250 /* ElementComposer.swift in Sources */,
+				D758164F251F565F002684A0 /* BlockQuoteElementComposer.swift in Sources */,
 				OBJ_251 /* EmphasisElementComposer.swift in Sources */,
 				OBJ_252 /* HeadingElementComposer.swift in Sources */,
 				OBJ_253 /* ImageElementComposer.swift in Sources */,

@@ -34,6 +34,7 @@ class ParmaCore: NSObject {
     private let listElementComposer = ListElementComposer()
     private let listItemElementComposer = ListItemElementComposer()
     private let dividerElementComposer = DividerElementComposer()
+    private let blockQuoteElementComposer = BlockQuoteElementComposer()
     private let unknownElementComposer = UnknownElementComposer()
     
     private let parser: XMLParser
@@ -95,6 +96,7 @@ class ParmaCore: NSObject {
             .list : listElementComposer,
             .item : listItemElementComposer,
             .divider : dividerElementComposer,
+            .blockQuote : blockQuoteElementComposer,
             .unknown : unknownElementComposer
         ]
     }

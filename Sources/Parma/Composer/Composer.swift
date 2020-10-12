@@ -10,7 +10,7 @@
 
 import Foundation
 
-@available(iOS 14.0, *)
+@available(iOS 13.0, *)
 protocol Composer {
     /// This method will be called right after entering the element. Context is updated to this element. Store everything needed in this delegate method.
     /// - Parameter context: The context needed to compose a view.

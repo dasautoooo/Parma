@@ -37,9 +37,9 @@ For more examples, please refer to [demo][1] app.
 
 ## Installation
 ### Requirement
-* Xcode 12.0 or later
+* Xcode 11.0 or later
 * Swift 5 or later
-* iOS 14.0 / macOS 11.0 or later deployment targets
+* iOS 13.0 / macOS 10.15 or later deployment targets
 
 ### Swift Package Manager
 [Swift Package Manager][2] is a tool for managing the distribution of Swift code. It’s integrated with the Swift build system to automate the process of downloading, compiling, and linking dependencies on all platforms.

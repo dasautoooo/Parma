@@ -15,7 +15,7 @@ let package = Package(
             targets: ["Parma"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/iwasrobbed/Down", from: "0.9.3")
+        .package(url: "https://github.com/iwasrobbed/Down", from: "0.8.1")
     ],
     targets: [
         .target(

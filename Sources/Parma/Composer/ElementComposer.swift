@@ -10,7 +10,7 @@
 
 import SwiftUI
 
-@available(iOS 13.0, *)
+@available(iOS 13.0, macOS 10.15, *)
 protocol InlineElementComposer: Composer {
     /// Provide relevant information to the render to generate `Text` component.
     /// - Parameters:

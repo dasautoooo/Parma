@@ -13,7 +13,7 @@ import Down
 
 public typealias Text = SwiftUI.Text
 
-@available(iOS 13.0, *)
+@available(iOS 13.0, macOS 10.15, *)
 /// The main logic of Parma.
 class ParmaCore: NSObject {
     // MARK: - Class property

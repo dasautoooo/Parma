@@ -2,7 +2,7 @@
 
 **Parma** is a city in the northern Italian region of Emilia-Romagna famous for its architecture, music, art, prosciutto (ham), cheese and surrounding countryside. It is home to the University of Parma, one of the oldest universities in the world. Parma is divided into two parts by the stream of the same name. The district on the far side of the river is *Oltretorrente*. Parma's Etruscan name was adapted by Romans to describe the round shield called *Parma*.
 
-![][image-1]
+![Parma][image-1]
 
 The Italian poet Attilio Bertolucci (born in a hamlet in the countryside) wrote: "As a capital city it had to have a river. As a little capital it received a stream, which is often dry".
 
@@ -10,7 +10,7 @@ The Italian poet Attilio Bertolucci (born in a hamlet in the countryside) wrote:
 ### Food and cuisine
 Parma is famous for its food and rich gastronomical tradition: two of its specialties are Parmigiano Reggiano cheese (also produced in Reggio Emilia), and Prosciutto di Parma (Parma ham), both given Protected Designation of Origin status. Parma also claims several stuffed pasta dishes like "tortelli d'erbetta" and "anolini in brodo".
 
-![][image-2]
+![Parma Night][image-2]
 
 ### People
 * **Painters and sculptors**
@@ -36,16 +36,16 @@ Parma is famous for its food and rich gastronomical tradition: two of its specia
 
 # Giambattista Bodoni
 **Giambattista Bodoni** was an Italian typographer, type-designer, compositor, printer and publisher in **Parma**.
-![][image-3]
+![Giambattista Bodoni by Giuseppe Lucatelli][image-3]
 He first took the type-designs of Pierre Simon Fournier as his exemplars, but afterwards became an admirer of the more modelled types of **John Baskerville**; and he and Firmin Didot evolved a style of type called "Modern," in which the letters are cut in such a way as to produce a strong contrast between the thick and thin parts of their body. Bodoni designed many typefaces, each one in a large range of type sizes. He is even more admired as a compositor than as a type designer, as the large range of sizes which he cut enabled him to compose his pages with the greatest possible subtlety of spacing. Like Baskerville, he sets off his texts with wide margins and uses little or no illustrations or decorations.
-![][image-4]
+![Quosque Tandem][image-4]
 There have been several modern revivals of his typefaces, all called *Bodoni*. They are often used as display faces.
 
 # Bodoni
 **Bodoni** is the name given to the serif typefaces first designed by **Giambattista Bodoni** (1740–1813) in the late eighteenth century and frequently revived since. Bodoni's typefaces are classified as **Didone** or **modern**. Bodoni followed the ideas of John Baskerville, as found in the printing type **Baskerville**—increased stroke contrast reflecting developing printing technology and a more vertical axis—but he took them to a more extreme conclusion. Bodoni had a long career and his designs changed and varied, ending with a typeface of a slightly condensed underlying structure with flat, unbracketed serifs, extreme contrast between thick and thin strokes, and an overall geometric construction.
-![][image-5]
+![ITCBodoni][image-5]
 Some digital versions of Bodoni are said to be hard to read due to "dazzle" caused by the alternating thick and thin strokes, particularly as the thin strokes are very thin at small point sizes. This is very common when optical sizes of font intended for use at display sizes are printed at text size, at which point the hairline strokes can recede to being hard to see. Versions of Bodoni that are intended to be used at text size are "Bodoni Old Face", optimized for 9 points; ITC Bodoni 12 (for 12 points); and ITC Bodoni 6 (for 6 points).
-![][image-6]
+![Bodoni vita nuova facsimile sepia][image-6]
 Massimo Vignelli stated that "Bodoni is one of the most elegant typefaces ever designed." In the English-speaking world, "modern" serif designs like Bodoni are most commonly used in headings and display uses and in upmarket magazine printing, which is often done on high-gloss paper that retains and sets off the crisp detail of the fine strokes. In Europe, they are more often used in body text.
 
 ## Foundry type revivals and variants

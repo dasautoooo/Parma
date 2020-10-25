@@ -10,11 +10,29 @@
 
 import SwiftUI
 
-struct ImageElementComposer: BlockElementComposer {
+class ImageElementComposer: BlockElementComposer {
+    private var startIndex: Int = 0
+    private var destination = ""
+    
+    func willStart(in context: ComposingContext) {
+        startIndex = context.views.count
+        destination = context.attributes["destination"] ?? ""
+    }
+    
+    func willStop(in context: ComposingContext) {
+        destination = ""
+        startIndex = 0
+    }
+    
     func view(in context: ComposingContext, render: ParmaRenderable) -> AnyView {
-        guard let urlString = context.attributes["destination"] else {
-            return AnyView(EmptyView())
+        if startIndex == context.views.count {
+            // No alt text
+            return render.imageView(with: destination, altTextView: nil)
+        } else {
+            // Has alt text
+            let altTextView = context.views.last
+            context.views = context.views.dropLast()
+            return render.imageView(with: destination, altTextView: altTextView)
         }
-        return render.imageView(with: urlString)
     }
 }

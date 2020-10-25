@@ -60,7 +60,8 @@ public protocol ParmaRenderable {
     
     /// Define the style of image view.
     /// - Parameter urlString: The url string for this image view.
-    func imageView(with urlString: String) -> AnyView
+    /// - Parameter altTextView: The view contains alt text.
+    func imageView(with urlString: String, altTextView: AnyView?) -> AnyView
 }
 
 // MARK: - Default render style
@@ -118,9 +119,11 @@ extension ParmaRenderable {
         )
     }
     
-    public func imageView(with urlString: String) -> AnyView {
-        return AnyView(
-            Text(urlString)
-        )
+    public func imageView(with urlString: String, altTextView: AnyView?) -> AnyView {
+        if urlString.isEmpty {
+            return altTextView ?? AnyView(EmptyView())
+        } else {
+            return AnyView(Text(urlString))
+        }
     }
 }

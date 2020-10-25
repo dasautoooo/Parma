@@ -116,7 +116,8 @@ func listItem(view: AnyView) -> AnyView
 
 /// Define the style of image view.
 /// - Parameter urlString: The url string for this image view.
-func imageView(with urlString: String) -> AnyView
+/// - Parameter altTextView: The view contains alt text.
+func imageView(with urlString: String, altTextView: AnyView?) -> AnyView
 ```
 
 ## Name Origin

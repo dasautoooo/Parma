@@ -19,13 +19,7 @@ public struct Parma: View {
     
     // MARK: - Public property
     public var body: some View {
-        if content != nil {
-            VStack(alignment: alignment) {
-                content
-            }
-        } else {
-            errorView
-        }
+        content != nil ? AnyView(VStack(alignment: alignment) { content }) : errorView
     }
     
     // MARK: - Initialization

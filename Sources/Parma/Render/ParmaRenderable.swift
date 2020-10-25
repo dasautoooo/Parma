@@ -92,7 +92,7 @@ extension ParmaRenderable {
         case .two:
             return textView.font(.title)
         default:
-            return textView.font(.subheadline)
+            return textView.font(.title)
         }
     }
     

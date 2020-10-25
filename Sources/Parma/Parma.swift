@@ -15,13 +15,16 @@ public struct Parma: View {
     private var core: ParmaCore?
     private var errorView: AnyView?
     private var content: AnyView?
+    private var alignment: HorizontalAlignment = .leading
     
     // MARK: - Public property
     public var body: some View {
         if content != nil {
-            return content
+            VStack(alignment: alignment) {
+                content
+            }
         } else {
-            return errorView
+            errorView
         }
     }
     
@@ -30,12 +33,14 @@ public struct Parma: View {
     /// Create a Parma view with markdown string.
     /// - Parameters:
     ///   - markdown: The markdown string for generating Parma view.
+    ///   - alignment: The guide for aligning the subviews in this stack. It has the same horizontal screen coordinate for all children. Default is leading alignment.
     ///   - render: Specify a custom render to give the view different appearance. Default is nil, will use `ParmaRender`.
     ///   - errorContent: The content view to display if some error occurred while parsing markdown.
-    public init(_ markdown: String, render: ParmaRenderable? = nil, errorContent: ((Error) -> AnyView)? = nil) {
+    public init(_ markdown: String, alignment: HorizontalAlignment = .leading, render: ParmaRenderable? = nil, errorContent: ((Error) -> AnyView)? = nil) {
         core = nil
         errorView = nil
         content = nil
+        self.alignment = alignment
         
         do {
             core = try ParmaCore(markdown)

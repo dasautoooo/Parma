@@ -16,10 +16,8 @@ struct ContentView: View {
 
     var body: some View {
         ScrollView {
-            VStack(alignment: .leading) {
-                Parma(markdown)
-                    .padding(.horizontal, 24)
-            }
+            Parma(markdown)
+                .padding(.horizontal, 24)
         }
         .onAppear {
             let url = Bundle.main.url(forResource: "SampleMarkdown", withExtension: "md")!

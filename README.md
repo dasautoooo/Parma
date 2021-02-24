@@ -46,6 +46,14 @@ For more examples, please refer to [demo][1] app.
 
 Adding `Parma` as a dependency by [using Xcode’s GUI][3], the package url is `https://github.com/dasautoooo/Parma` .
 
+### CocoaPods
+[CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate Parma into your Xcode project using CocoaPods, specify it in your `Podfile`:
+
+```ruby
+pod 'Parma'
+```
+
+
 ## Appearance Customization
 To customize `Text` styles and `View`s, create a new render which conform to protocol `ParmaRenderable`, and only reimplement those that fit your purposes. Finally, assign the customized render as a new render when create `Parma` view.
 

@@ -63,7 +63,7 @@ class ParmaCore: NSObject {
     let context = ComposingContext()
     
     /// Sanitize input to prevent < and > from causing problems
-    private func escapeContent(_ rawContent: String) -> String {
+    private static func escapeContent(_ rawContent: String) -> String {
         
         enum EscapedCharacters: String, CaseIterable {
             
@@ -95,7 +95,7 @@ class ParmaCore: NSObject {
     
     // MARK: - Initialization
     convenience init(_ markdown: String) throws {
-        let down = Down(markdownString: escapeContent(markdown))
+        let down = Down(markdownString: Self.escapeContent(markdown))
         let xml = try down.toXML()
         self.init(xmlData: Data(xml.utf8))
     }

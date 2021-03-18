@@ -62,9 +62,40 @@ class ParmaCore: NSObject {
     /// The context for element composing.
     let context = ComposingContext()
     
+    /// Sanitize input to prevent < and > from causing problems
+    private func escapeContent(_ rawContent: String) -> String {
+        
+        enum EscapedCharacters: String, CaseIterable {
+            
+            case leftAngleBracket = "<",
+                 rightAngleBracket = ">"
+            
+            func replacement() -> String {
+                switch self {
+                case .leftAngleBracket:
+                    return "&lt;"
+                case .rightAngleBracket:
+                    return "&gt;"
+                }
+            }
+            
+            static func escapeString(_ string: String) -> String {
+                var escapedValue = string
+                
+                self.allCases.forEach {
+                    escapedValue = escapedValue.replacingOccurrences(of: $0.rawValue, with: $0.replacement())
+                }
+                
+                return escapedValue
+            }
+        }
+        
+        return EscapedCharacters.escapeString(rawContent)
+    }
+    
     // MARK: - Initialization
     convenience init(_ markdown: String) throws {
-        let down = Down(markdownString: markdown)
+        let down = Down(markdownString: escapeContent(markdown))
         let xml = try down.toXML()
         self.init(xmlData: Data(xml.utf8))
     }

@@ -26,6 +26,9 @@ class ComposingContext {
     
     /// The element attributes.
     var attributes = [String : String]()
+
+    /// Attributes required to display list elements
+    var listAttributesStack: [ListAttributes] = []
     
     /// Return the element which wrapped the current element if possible.
     var superElement: Element? {

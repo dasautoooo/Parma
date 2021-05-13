@@ -20,12 +20,15 @@ For more examples, please refer to [demo][1] app.
 * Heading level 1-6
 * Paragraph
 * Multi-level bullet list
+* Multi-level ordered list
+    * Period delimiter
+    * Parenthesis delimiter
 * Image (Needs extra configurations)
 * Inline text
-	* Strong
-	* Emphasis
-	* Code
-			
+    * Strong
+    * Emphasis
+    * Code
+            
 ### Possibly Support in Future Versions
 * Divider
 * Multi-level ordered list

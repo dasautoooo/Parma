@@ -6,6 +6,13 @@
 
 The Italian poet Attilio Bertolucci (born in a hamlet in the countryside) wrote: "As a capital city it had to have a river. As a little capital it received a stream, which is often dry".
 
+**Contents**
+1. Culture
+    1. Food and cuisine
+    1. People
+        1. Painters and sculptors
+        1. Others
+
 ## Culture
 ### Food and cuisine
 Parma is famous for its food and rich gastronomical tradition: two of its specialties are Parmigiano Reggiano cheese (also produced in Reggio Emilia), and Prosciutto di Parma (Parma ham), both given Protected Designation of Origin status. Parma also claims several stuffed pasta dishes like "tortelli d'erbetta" and "anolini in brodo".

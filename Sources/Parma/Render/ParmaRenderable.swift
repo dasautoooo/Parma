@@ -56,7 +56,7 @@ public protocol ParmaRenderable {
     
     /// Define the style of list item.
     /// - Parameter view: The view contains view(s) which belong(s) to this item.
-    func listItem(view: AnyView) -> AnyView
+    func listItem(attributes: ListAttributes, index: [Int], view: AnyView) -> AnyView
     
     /// Define the style of image view.
     /// - Parameter urlString: The url string for this image view.
@@ -109,11 +109,29 @@ extension ParmaRenderable {
         AnyView(view.fixedSize(horizontal: false, vertical: true).padding(.bottom, 8))
     }
     
-    public func listItem(view: AnyView) -> AnyView {
-        let bullet = "•"
+    public func listItem(attributes: ListAttributes, index: [Int], view: AnyView) -> AnyView {
+        let delimiter: String
+        switch attributes.delimiter {
+        case .period:
+            delimiter = "."
+        case .parenthesis:
+            delimiter = ")"
+        }
+
+        let separator: String
+        switch attributes.type {
+        case .bullet:
+            separator = index.count % 2 == 1 ? "•" : "◦"
+        case .ordered:
+            separator = index
+                .map({ String($0) })
+                .joined(separator: ".")
+                .appending(delimiter)
+        }
+
         return AnyView(
             HStack(alignment: .top, spacing: 4) {
-                Text(bullet)
+                Text(separator)
                 view
             }
         )

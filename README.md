@@ -28,7 +28,7 @@ For more examples, please refer to [demo][1] app.
     * Strong
     * Emphasis
     * Code
-            
+
 ### Possibly Support in Future Versions
 * Divider
 * Multi-level ordered list

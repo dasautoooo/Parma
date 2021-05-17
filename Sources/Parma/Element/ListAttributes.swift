@@ -12,8 +12,8 @@ import Foundation
 
 /// Attributes used to display a list element.
 public struct ListAttributes {
-    var type: ListType
-    var delimiter: ListDelimiter
+    public internal(set) var type: ListType
+    public internal(set) var delimiter: ListDelimiter
 
     static var defaultAttributes: ListAttributes {
         ListAttributes(type: .bullet, delimiter: .period)

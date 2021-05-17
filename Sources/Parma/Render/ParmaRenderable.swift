@@ -55,6 +55,8 @@ public protocol ParmaRenderable {
     func paragraphBlock(view: AnyView) -> AnyView
     
     /// Define the style of list item.
+    /// - Parameter attributes: Attributes of the list containing the item. Those must be considered for proper item rendering.
+    /// - Parameter index: Normalized index of the list item. For exemple, the index of the third item of a one level list would be `[2]` and the second item of a sublist appearing fourth in it's parent list would be `[3, 1]`.
     /// - Parameter view: The view contains view(s) which belong(s) to this item.
     func listItem(attributes: ListAttributes, index: [Int], view: AnyView) -> AnyView
     

@@ -31,7 +31,6 @@ For more examples, please refer to [demo][1] app.
 
 ### Possibly Support in Future Versions
 * Divider
-* Multi-level ordered list
 * Block quote
 * Code block
 

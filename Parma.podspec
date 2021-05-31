@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'Parma'
-  s.version          = '0.2.0'
+  s.version          = '0.3.0'
   s.summary          = 'A SwiftUI view for displaying Markdown with customizable appearances.'
   s.description      = 'Display Markdown using pure SwiftUI components. Taking advantages of ViewBuilder to make custom appearances for Text and View.'
   s.homepage         = 'https://github.com/dasautoooo/Parma'

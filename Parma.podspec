@@ -17,5 +17,5 @@ Pod::Spec.new do |s|
   
   s.source_files = 'Sources/**/*'
 
-  s.dependency 'Down', '~> 0.10'
+  s.dependency 'Down', '~> 0.11'
 end

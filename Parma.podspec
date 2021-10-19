@@ -13,8 +13,9 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '13.0'
   s.osx.deployment_target  = '10.15'
-
+  s.watchos.deployment_target = '7.0'
+  
   s.source_files = 'Sources/**/*'
 
-  s.dependency 'Down', '~> 0.9.3'
+  s.dependency 'Down', '~> 0.11'
 end

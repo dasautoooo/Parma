@@ -34,11 +34,10 @@ public protocol ParmaRenderable {
     /// - Parameter textView: The textView generated from captured emphasis string.
     func emphasis(textView: Text) -> Text
     
-    /// Define the link text style.
-    /// - Parameters:
-    ///   - textView: The textView generated from captured link string.
-    ///   - destination: The destination of the link.
-    func link(textView: Text, destination: String?) -> Text
+    /// Define the style of link view.
+    /// - Parameter urlString: The url string for the link destination.
+    /// - Parameter altTextView: The view contains link text.
+    func linkView(with urlString: String, altTextView: AnyView?) -> AnyView
     
     /// Define the code text style.
     /// - Parameter text: The text string captured from code.
@@ -80,8 +79,12 @@ extension ParmaRenderable {
         textView.italic()
     }
     
-    public func link(textView: Text, destination: String?) -> Text {
-        return textView
+    public func linkView(with urlString: String, altTextView: AnyView?) -> AnyView {
+        if urlString.isEmpty {
+            return altTextView ?? AnyView(EmptyView())
+        } else {
+            return AnyView(Text(urlString))
+        }
     }
     
     public func code(_ text: String) -> Text {

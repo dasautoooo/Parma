@@ -17,7 +17,7 @@ enum Element: Hashable {
     /// If the specific element works as inline.
     var isInline: Bool {
         switch self {
-        case .text, .strong, .emphasis, .link, .code:
+        case .text, .strong, .emphasis, .code:
             return true
         default:
             return false

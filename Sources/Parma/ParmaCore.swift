@@ -82,7 +82,6 @@ class ParmaCore: NSObject {
             .text : plaintTextComposer,
             .strong : strongElementComposer,
             .emphasis : emphasisElementComposer,
-            .link : linkElementComposer,
             .code : codeElementComposer,
         ]
         blockComposers =
@@ -90,6 +89,7 @@ class ParmaCore: NSObject {
             .paragraph : paragraphElementComposer,
             .heading : headingElementComposer,
             .image : imageElementComposer,
+            .link : linkElementComposer,
             .list : listElementComposer,
             .item : listItemElementComposer,
             .unknown : unknownElementComposer

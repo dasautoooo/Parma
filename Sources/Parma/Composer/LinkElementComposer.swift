@@ -10,18 +10,29 @@
 
 import SwiftUI
 
-class LinkElementComposer: InlineElementComposer {
-    var destination: String?
-    
+class LinkElementComposer: BlockElementComposer {
+    private var startIndex: Int = 0
+    private var destination: String = ""
+
     func willStart(in context: ComposingContext) {
-        destination = context.attributes["destination"]
+        startIndex = context.views.count
+        destination = context.attributes["destination"] ?? ""
     }
-    
+
     func willStop(in context: ComposingContext) {
-        destination = nil
+        destination = ""
+        startIndex = 0
     }
-    
-    func text(in context: ComposingContext, render: ParmaRenderable) -> Text {
-        return render.link(textView: context.concatenatedText, destination: destination)
+
+    func view(in context: ComposingContext, render: ParmaRenderable) -> AnyView {
+        if startIndex == context.views.count {
+            // No alt text
+            return render.linkView(with: destination, altTextView: nil)
+        } else {
+            // Has alt text
+            let altTextView = context.views.last
+            context.views = context.views.dropLast()
+            return render.linkView(with: destination, altTextView: altTextView)
+        }
     }
 }
